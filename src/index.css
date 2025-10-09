@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 26px;
+  height: 26px;
+  color: #415D43;
+}
+
+.swiper-button-prev{
+color: #415D43;
+}
+.swiper-button-next{
+color: #415D43;
+}
+
+@media screen and (max-width: 640px) {
+  .swiper-button-next svg,
+  .swiper-button-prev svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+}
