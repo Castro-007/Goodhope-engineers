@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0', 
-    allowedHosts: ['topklan.onrender.com'],
+    allowedHosts: ['goodhopeengineers.onrender.com'],
     port: process.env.PORT || 5173,
   },
   assetsInclude: ['**/*.PNG'],
