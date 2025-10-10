@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { NavLink } from "react-router-dom";
 import NumbersAni from "../Components/NumbersAni";
-import LookFor from "../assets/Images/Lookfor.jpg"
+
 import {
   Achievements,
   imageSlider,
