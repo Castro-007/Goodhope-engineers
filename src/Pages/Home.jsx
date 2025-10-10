@@ -19,12 +19,12 @@ import { MdArrowRightAlt } from "react-icons/md";
 
 const Home = () => {
   const display = [...ScrollText, ...ScrollText];
-  const Affdisplay = [
-    ...Affiliates,
-    ...Affiliates,
-    ...Affiliates,
-    ...Affiliates,
-  ];
+  // const Affdisplay = [
+  //   ...Affiliates,
+  //   ...Affiliates,
+  //   ...Affiliates,
+  //   ...Affiliates,
+  // ];
 
   // const [currentIndex, setCurrentIndex] = useState(0);
   // const [slideDirection, setSlideDirection] = useState("right");

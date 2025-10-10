@@ -60,7 +60,7 @@ const Services = () => {
             {Servico.map((x) => (
               <button key={x}
               onClick={() => handleClick(x)}
-                class="cursor-pointer transition-all bg-[#1ED2A5] text-white lg:px-4 sma:px-2 mda:px-2 py-2 mb-8 rounded-lg
+                className="cursor-pointer transition-all bg-[#1ED2A5] text-white lg:px-4 sma:px-2 mda:px-2 py-2 mb-8 rounded-lg
                     border-blue-600 border-b-[4px] hover:brightness-110 sma:text-xs
                     active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
               >
@@ -108,6 +108,7 @@ const Services = () => {
             {
               HowWeWork.map((x) => (
                 <motion.div
+                key={x.Id}
                 className="text-center flex flex-col my-5 justify-center items-center"
                 >
                   <img src={x.image} className="mb-8" alt="" />
