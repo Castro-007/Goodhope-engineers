@@ -29,10 +29,10 @@ export default {
         Manrope: ["Manrope", "sans-serif"],
       },
       backgroundImage: {
-        'homebg': "url('/goodhope/src/assets/Images/hero-engineering.jpg')",
-        'Aboutbg': "url('./src/assets/Images/cranesz.jpg')",
-        'Lookforbg': "url('./src/assets/Images/Lookfor.jpg')",
-        'Servwedobg': "url('./src/assets/Images/Services/wedo-sketch.jpg')",
+        'homebg': "url('./public/assets/Images/hero-engineering.jpg')",
+        'Aboutbg': "url('./public/assets/Images/cranesz.jpg')",
+        'Lookforbg': "url('./public/assets/Images/Lookfor.jpg')",
+        'Servwedobg': "url('./public/assets/Images/Services/wedo-sketch.jpg')",
       },
       keyframes: {
         wiggle: {
