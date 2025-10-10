@@ -49,7 +49,7 @@ const Contact = () => {
           <form onSubmit={onSubmit} className='mt-8 mx-8'>
             <div className='flex sma:gap-6 mda:gap-6 justify-between'>
 
-            <div class="relative ">
+            <div className="relative ">
       <input
         placeholder="john@example.com"
         className="peer h-10 w-full border-b-2 border-gray-300 text-black bg-transparent font-Nunito placeholder-transparent focus:outline-none focus:border-[#1ED2A5]"

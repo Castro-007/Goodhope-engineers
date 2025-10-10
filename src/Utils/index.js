@@ -2,13 +2,6 @@ import {FaBuilding, FaDraftingCompass, FaHardHat, FaRoad, FaClipboardCheck,
 } from "react-icons/fa";
 import { MdOutlineEngineering } from "react-icons/md";
 import DesignHills from "../assets/Images/designhills-unsplash.jpg";
-
-
-import Gama from "../assets/Images/gama.jpg";
-import Society from "../assets/Images/society1.jpeg";
-import Ukasiso from "../assets/Images/Ukasiso.jpg";
-import Coren from "../assets/Images/coren1.jpeg";
-
 import Team1 from "../assets/Images/Teams/Team1.jpg";
 import Team2 from "../assets/Images/Teams/Team2.jpg";
 import Team3 from "../assets/Images/Teams/Team3.jpg";
@@ -231,38 +224,7 @@ export const ProjectHome = [
   },
 ];
 
-export const Affiliates = [
-  {
-    Id: 1,
-    img: fidic,
-    alt: "fidic logo",
-  },
-  {
-    Id: 2,
-    img: Gama,
-    alt: "Gama Logo",
-  },
-  {
-    Id: 3,
-    img: Society,
-    alt: "Society Logo",
-  },
-  {
-    Id: 4,
-    img: Ukasiso,
-    alt: " Logo",
-  },
-  {
-    Id: 5,
-    img: Coren,
-    alt: "Coren Logo",
-  },
-  {
-    Id: 6,
-    img: Acen,
-    alt: "Acen Logo",
-  },
-];
+
 
 export const AboutTeam = [
   {

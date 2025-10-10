@@ -5,7 +5,6 @@ import NumbersAni from "../Components/NumbersAni";
 import LookFor from "../assets/Images/Lookfor.jpg"
 import {
   Achievements,
-  Affiliates,
   imageSlider,
   ScrollText,
   ServiceHome,
