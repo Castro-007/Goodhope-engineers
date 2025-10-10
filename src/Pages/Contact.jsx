@@ -46,8 +46,8 @@ const Contact = () => {
             <h1 className='text-lg mx-6 font-Playfair font-normal'>GET A QUOTE</h1>
             <h1 className='text-5xl mx-6 my-6 font-Anek font-medium tracking-wide'>Request a Quote for Your Next Project</h1>
             <p className='text-lg mx-6 font-Anek font-light'>We'll get back to you as soon as possible</p>
-          <form onSubmit={onSubmit} className='mt-8 mx-8'>
-            <div className='flex sma:gap-6 mda:gap-6 justify-between'>
+          <form onSubmit={onSubmit} className='mt-8 mx-8 sma:mx-3 mda:mx-3'>
+            <div className='flex sma:gap-4 mda:gap-4 justify-between'>
 
             <div className="relative ">
       <input

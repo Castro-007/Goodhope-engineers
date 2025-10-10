@@ -56,11 +56,11 @@ const Services = () => {
           <h1 className="text-4xl sma:text-2xl mda:text-2xl font-Anek">
             WHAT WE OFFER
           </h1>
-          <div className="flex mt-12 justify-center  mb-8 items-center gap-5">
+          <div className="flex mt-12 sma:mt-6 mda:mt-6 justify-center mb-8 items-center gap-5">
             {Servico.map((x) => (
               <button key={x}
               onClick={() => handleClick(x)}
-                className="cursor-pointer transition-all bg-[#1ED2A5] text-white lg:px-4 sma:px-2 mda:px-2 py-2 mb-8 rounded-lg
+                className="cursor-pointer transition-all bg-[#1ED2A5] text-white sma:h-14 mda:h-14 lg:px-4 sma:px-2 mda:px-2 py-2 mb-8 rounded-lg
                     border-blue-600 border-b-[4px] hover:brightness-110 sma:text-xs
                     active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
               >
@@ -81,12 +81,12 @@ const Services = () => {
                   >
                     <div className="flex gap-5">
                       <div className="basis-[80%]">
-                        <img src={x.image} alt="" className="w-40 sma:w-full sma:h-28 h-40 rounded-2xl" />
+                        <img src={x.image} alt="" className="w-40 sma:w-full sma:h-32 mda:h-32 h-40 rounded-2xl" />
                       </div>
                       <div>
                         <h1 className="font-Anek text-lg">{x.Id}</h1>
                         <h1 className="font-Nunito text-2xl sma:text-xl font-medium mt-3 ">{x.Service}</h1>
-                        <p className="text-sm font-Nunito ">{x.ServiceTitle}</p>
+                        <p className="text-lg font-Nunito ">{x.ServiceTitle}</p>
                       </div>
                     </div>
                   </motion.div>
@@ -98,7 +98,7 @@ const Services = () => {
           <h1 className="text-4xl sma:text-2xl mda:text-2xl font-Anek lg:my-5">HOW WE WORK</h1>
           <div className="bg-Servwedobg bg-fixed max-w-7xl mb-16  relative rounded-md bg-cover bg-center sma:bg-top mda:bg-top">
         <div className="absolute inset-0 gradient-hero bg-white/90 w-full opacity-80 rounded-md"></div>
-        <div className="relative flex">
+        <div className="relative flex sma:flex-col mda:flex-col">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

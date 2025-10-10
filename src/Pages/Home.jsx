@@ -54,7 +54,7 @@ const Home = () => {
   return (
     <div className="bg-  lg:px-6 lg:ml-6 sma:px-4 mda:px-4 px-4 ">
       <section>
-        <div className="bg-homebg h-[550px] bg-fixed max-w-6xl relative rounded-md bg-cover bg-center sma:bg-top mda:bg-top ">
+        <div className="bg-homebg h-[550px] lg:bg-fixed max-w-6xl relative rounded-md bg-cover bg-center sma:bg-top mda:bg-top ">
           <div className="absolute inset-0  gradient-hero bg-black/20 w-full opacity-80"></div>
           <div>
             <motion.h1 
@@ -316,7 +316,7 @@ const Home = () => {
                     </div>
                     <p className="font-Manrope font-medium mt-3">{x.Text}</p>
                     <figcaption className="flex items-center mt-6 space-x-3 rtl:space-x-reverse">
-                      <cite className="pe-3 border-r-2 border-gray-200 font-medium text-gray-900 dark:text-white">
+                      <cite className="pe-3 border-r-2 border-gray-200 font-medium text-gray-900 ">
                         {x.Client}
                       </cite>
                       <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
@@ -358,7 +358,7 @@ const Home = () => {
         <div className="flex sma:flex-col max-w-6xl bg-Lookforbg relative mda:flex-col bg-cover bg-center sma:bg-top mda:bg-top h-[400px] text-amber-300 justify-center text-center rounded-3xl items-start pt-5 sma:mt-12 mda:mt-12">
           <div className="absolute inset-0 gradient-hero bg-teal-900/50 w-full opacity-80"></div>
           <div className="relative ">
-            <p className="font-Nunito font-extralight sma:text-2xl mda:text-2xl text-3xl">
+            <p className="font-Nunito lg:font-extralight font-light sma:text-2xl mda:text-2xl text-3xl">
               LOOKING FOR A QUALIFIED TEAM TO DELIVER YOUR
             </p>
             <p className="font-Nunito sma:text-2xl mda:text-2xl text-3xl font-medium mb-3 mt-6">

@@ -14,7 +14,7 @@ const Footer = () => {
 
           </NavLink>
           {/* © 2024 Goodhope Consulting Engineering Services. All rights reserved. */}
-          <p className="sma:text-sm mda:text-sm text-base font-light font-Nunito ">
+          <p className=" text-base font-light font-Nunito ">
             Goodhope Consulting Engineering Services is an independent firm
             specializing in civil and structural engineering, as well as project
             development. We deliver professional consultancy solutions to

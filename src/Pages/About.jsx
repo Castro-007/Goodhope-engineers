@@ -110,7 +110,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 1 }}
-            className="mt-10 text-xl sma:text-base mda:text-base font-Nunito text-[#415D43]"
+            className="mt-10 text-xl sma:text-lg mda:text-lg font-Nunito text-[#415D43]"
           >
             {" "}
             At Goodhope Engineering Consulting, our vision is to be a leading engineering
@@ -147,7 +147,7 @@ const About = () => {
               OUR MISSION
             </h1>
             <p className="mt-10 text-xl sma:text-base mda:text-base font-Nunito text-black">
-              At Goodhope Consulting, our mission is to deliver innovative and
+              At Goodhope Engineering Consulting, our mission is to deliver innovative and
               reliable civil and structural engineering solutions that drive
               sustainable development. We are committed to excellence,
               integrity, and collaboration — ensuring every project adds value
@@ -177,7 +177,7 @@ const About = () => {
               OUR VALUES
             </h1>
             <p className="mt-10 text-xl sma:text-base mda:text-base font-Nunito text-white">
-              At Goodhope Consulting, our values shape everything we do. We
+              At Goodhope Engineering Consulting, our values shape everything we do. We
               uphold integrity, pursue excellence, and embrace innovation to
               deliver forward-thinking solutions. With a focus on sustainability
               and collaboration, we build responsibly and create lasting value
@@ -200,7 +200,7 @@ const About = () => {
             </div>
           </div>
           <div>
-            <div className="grid grid-cols-2 sma:grid-cols-2 mda:grid-cols-1 lg:gap-8 sma:gap-4 mda:gap-4 items-center ">
+            <div className="grid grid-cols-2 sma:grid-cols-1 mda:grid-cols-1 lg:gap-8 sma:gap-4 mda:gap-4 items-center ">
               {FactsComp.map((x) => (
                 <div
                   key={x.Id}
