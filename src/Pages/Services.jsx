@@ -8,7 +8,7 @@ import { HowWeWork, ServicesWeDo } from "../Utils";
 
 const Services = () => {
 
-  const [filter, setFilter] = useState('ALL')
+  const [filter, setFilter] = useState('ALL SECTORS')
 
   const filteredData = filter === 'ALL SECTORS' ? ServicesWeDo : ServicesWeDo.filter(item => item.Category === filter)
 
