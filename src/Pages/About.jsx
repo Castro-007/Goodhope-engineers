@@ -9,7 +9,7 @@ import Archidesi from "../assets/Images/Archidesi.jpeg";
 const About = () => {
   return (
     <div className="lg:px-8 sma:px-4 mda:px-4 ">
-      <div className="bg-Aboutbg bg-fixed max-w-7xl mb-16 h-[300px] relative rounded-md bg-cover bg-center sma:bg-top mda:bg-top lg:mx-5">
+      <div className="bg-Aboutbg lg:bg-fixed max-w-7xl mb-16 h-[300px] relative rounded-md bg-cover bg-center sma:bg-top mda:bg-top lg:mx-5">
         <div className="absolute inset-0 gradient-hero bg-black/30 w-full opacity-80 rounded-md"></div>
         <div className="relative flex items-center justify-center h-full">
           <motion.h1
@@ -146,7 +146,7 @@ const About = () => {
             <h1 className="text-3xl w-full text-[#415D43] sma:text-xl mda:text-xl font-semibold font-Sora">
               OUR MISSION
             </h1>
-            <p className="mt-10 text-xl sma:text-base mda:text-base font-Nunito text-black">
+            <p className="mt-10 text-xl sma:text-lg mda:text-lg font-Nunito text-black">
               At Goodhope Engineering Consulting, our mission is to deliver innovative and
               reliable civil and structural engineering solutions that drive
               sustainable development. We are committed to excellence,
@@ -176,7 +176,7 @@ const About = () => {
             <h1 className="text-3xl w-full text-white sma:text-xl mda:text-xl font-semibold font-Sora">
               OUR VALUES
             </h1>
-            <p className="mt-10 text-xl sma:text-base mda:text-base font-Nunito text-white">
+            <p className="mt-10 text-xl sma:text-lg mda:text-lg font-Nunito text-white">
               At Goodhope Engineering Consulting, our values shape everything we do. We
               uphold integrity, pursue excellence, and embrace innovation to
               deliver forward-thinking solutions. With a focus on sustainability
@@ -209,10 +209,10 @@ const About = () => {
                   <img src={x.image} className=" w-16 h-16  sma:text-3xl mda:text-3xl font-Sora font-medium  mb-12 flex" />
                     
                   
-                  <h1 className="text-lg sma:text-sm mt-5 mda:text-sm font-Sora font-medium text-[#000000]">
+                  <h1 className="text-lg  mt-5  font-Sora font-medium text-[#000000]">
                     {x.Heading}
                   </h1>
-                  <p className="text-sm font-Nunito mt-2 font-normal">
+                  <p className="text-base font-Nunito mt-2 font-normal">
                     {x.text}
                   </p>
                 </div>
@@ -260,7 +260,7 @@ const About = () => {
                 <img
                   src={x.img}
                   alt={x.alt}
-                  className="w-[250px] h-[250px] rounded-[100%] mx-auto"
+                  className="w-[250px] h-[250px] rounded-[100%] "
                 />
                 <h2 className="text-2xl sma:text-xl mda:text-xl font-Sora font-medium mt-4 text-[#415D43]">
                   {x.name}

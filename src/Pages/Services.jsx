@@ -10,13 +10,13 @@ const Services = () => {
 
   const [filter, setFilter] = useState('ALL')
 
-  const filteredData = filter === 'ALL' ? ServicesWeDo : ServicesWeDo.filter(item => item.Category === filter)
+  const filteredData = filter === 'ALL SECTORS' ? ServicesWeDo : ServicesWeDo.filter(item => item.Category === filter)
 
   const handleClick = (Category) => {
     setFilter(Category)
   }
 
-  const Servico = ["ALL", "Civil Engineering", "Structural Engineering", "Project Management"];
+  const Servico = ["ALL SECTORS", "Civil Engineering", "Structural Engineering", "Project Management"];
 
 
   return (
@@ -61,7 +61,7 @@ const Services = () => {
               <button key={x}
               onClick={() => handleClick(x)}
                 className="cursor-pointer transition-all bg-[#1ED2A5] text-white sma:h-14 mda:h-14 lg:px-4 sma:px-2 mda:px-2 py-2 mb-8 rounded-lg
-                    border-blue-600 border-b-[4px] hover:brightness-110 sma:text-xs
+                    border-blue-600 border-b-[4px] hover:brightness-110 sma:text-sm mda:text-sm
                     active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
               >
                 {x}
@@ -81,12 +81,12 @@ const Services = () => {
                   >
                     <div className="flex gap-5">
                       <div className="basis-[80%]">
-                        <img src={x.image} alt="" className="w-40 sma:w-full sma:h-32 mda:h-32 h-40 rounded-2xl" />
+                        <img src={x.image} alt="" className="w-40 sma:w-full sma:h-24 mda:h-24 h-40 rounded-2xl" />
                       </div>
                       <div>
                         <h1 className="font-Anek text-lg">{x.Id}</h1>
-                        <h1 className="font-Nunito text-2xl sma:text-xl font-medium mt-3 ">{x.Service}</h1>
-                        <p className="text-lg font-Nunito ">{x.ServiceTitle}</p>
+                        <h1 className="font-Nunito text-2xl font-semibold sma:text-xl  mt-3 ">{x.Service}</h1>
+                        <p className="text-base font-Manrope font-normal">{x.ServiceTitle}</p>
                       </div>
                     </div>
                   </motion.div>
@@ -103,7 +103,7 @@ const Services = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.7 }}
-            className=" backdrop-sepia-0 bg-opacity-0 flex gap-8 items-center justify-center text-center backdrop-blur-xs backdrop-filter w-fit  px-4 rounded-md  "
+            className=" backdrop-sepia-0 bg-opacity-0 flex sma:flex-col mda:flex-col gap-8 items-center justify-center text-center backdrop-blur-xs backdrop-filter w-fit  px-4 rounded-md  "
           >
             {
               HowWeWork.map((x) => (
