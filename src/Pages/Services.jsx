@@ -56,7 +56,7 @@ const Services = () => {
           <h1 className="text-4xl sma:text-2xl mda:text-2xl font-Anek">
             WHAT WE OFFER
           </h1>
-          <div className="flex mt-12 sma:mt-6 mda:mt-6 justify-center mb-8 items-center gap-5">
+          <div className="flex  mt-12 sma:mt-6 mda:mt-6 justify-center mb-8 items-center gap-5">
             {Servico.map((x) => (
               <button key={x}
               onClick={() => handleClick(x)}
@@ -79,9 +79,9 @@ const Services = () => {
                 transition={{ duration: 0.5, delay: x.Id * 0.3 }}
                 className="rounded-3xl p-2 shadow-xl"
                   >
-                    <div className="flex gap-5">
+                    <div className="flex sma:flex-col gap-5">
                       <div className="basis-[80%]">
-                        <img src={x.image} alt="" className="w-40 sma:w-full sma:h-24 mda:h-24 h-40 rounded-2xl" />
+                        <img src={x.image} alt="" className="w-40 sma:w-full  mda:h-24 h-40 rounded-2xl" />
                       </div>
                       <div>
                         <h1 className="font-Anek text-lg">{x.Id}</h1>

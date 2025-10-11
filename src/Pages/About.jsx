@@ -245,7 +245,7 @@ const About = () => {
           <h1 className="text-3xl text-start font-Playfair text-[#415D43] pt-8">
             MEET OUR TEAM
           </h1>
-          <hr className="border-t-2 border-[#415D43] w-[20%] sma:w-[40%] mda:w-[40%]" />
+          {/* <hr className="border-t-2 border-[#415D43] w-[20%] sma:w-[40%] mda:w-[40%]" /> */}
           <div className="grid grid-cols-3 sma:grid-cols-1 mda:grid-cols-1 gap-6 my-16 justify-around ">
             {AboutTeam.map((x) => (
               <motion.div
