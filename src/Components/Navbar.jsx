@@ -51,7 +51,7 @@ const Navbar = () => {
           </button>
           {/* Mobile menu */}
           <div
-            className={`fixed top-0 -left-10 mt-14 h-[350px] w-full bg-[#0079B8] text-white shadow-md rounded-md transition-transform duration-500 ease-in-out
+            className={`fixed top-0 -left-10 mt-14 h-[350px] w-full bg-[#FFFFFF] text-black shadow-md rounded-md transition-transform duration-500 ease-in-out
                         ${
                             isMobile
                             ? "translate-x-4"
@@ -64,7 +64,10 @@ const Navbar = () => {
                   <NavLink
                     to={x.Link}
                     onClick={() => setIsMobile(false)}
-                    className=''
+                    className={({ isActive }) =>
+                  isActive
+                    ? "text-[#69AD66] group"
+                    : "text-[#415D43] transition delay-150 "}
                   >
                     {x.name}
                   </NavLink>
