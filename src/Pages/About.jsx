@@ -31,7 +31,7 @@ const About = () => {
             transition={{ duration: 1, delay: 1 }}
             className="text-3xl w-full text-[#0047AB] sma:text-xl mda:text-xl font-semibold font-Sora"
           >
-            GOOD HOPE CONSULTING ENGINEERING SERVICES
+            GOODHOPE CONSULTING ENGINEERS
           </motion.h1>
           <motion.h3
             initial={{ opacity: 0, x: -40 }}
@@ -51,19 +51,19 @@ const About = () => {
             className="mt-10 text-lg font-Nunito text-[#415D43]"
           >
             {" "}
-            Goodhope Engineering Consulting is dedicated to providing innovative and
-            reliable civil and structural engineering solutions that meet the
-            unique needs of every project. With extensive experience in project
-            development, we combine technical expertise, creativity, and a
-            commitment to excellence to deliver lasting value to our clients and
-            communities. Our team takes pride in building with precision,
+            Goodhope Consulting Engineers is dedicated to providing innovative
+            and reliable civil and structural engineering solutions that meet
+            the unique needs of every project. With extensive experience in
+            project development, we combine technical expertise, creativity, and
+            a commitment to excellence to deliver lasting value to our clients
+            and communities. Our team takes pride in building with precision,
             integrity, and a vision for sustainable growth — partnering with
             clients to turn ideas into reality.{" "}
           </motion.p>
         </div>
         <motion.div
           initial={{ opacity: 0, x: 40 }}
-        whileInView={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 1 }}
         >
@@ -77,11 +77,11 @@ const About = () => {
       <div className="my-10 pt-8 flex  sma:flex-col-reverse mda:flex-col bg-[#f5f5f5] rounded-md p-4 mt-16 gap-6 justify-around">
         <motion.img
           initial={{ opacity: 0, x: -40 }}
-        whileInView={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 1 }}
           src={Archidesi}
-          className="h-[500px] w-[400px] rounded-md"
+          className="h-[400px] w-[400px] rounded-md"
           alt="Building Construction"
         />
         <div className="basis-[50%]">
@@ -101,11 +101,10 @@ const About = () => {
             transition={{ duration: 1, delay: 1 }}
             className="text-2xl sma:text-lg mda:text-lg mt-4 font- italic"
           >
-            To be a leading engineering consultancy firm known for excellence,
-            innovation, and sustainable solutions that positively impact
-            communities worldwide and reflect indigenous roots.
+            To lead African infrastructure designs with local insight, resilient
+            innovation, and a legacy that reflects our roots.
           </motion.h3>
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -113,13 +112,13 @@ const About = () => {
             className="mt-10 text-xl sma:text-lg mda:text-lg font-Nunito text-[#415D43]"
           >
             {" "}
-            At Goodhope Engineering Consulting, our vision is to be a leading engineering
-            consultancy firm recognized for our commitment to excellence,
-            innovation, and sustainable solutions. We strive to create a
-            positive impact on the communities we serve by delivering projects
-            that enhance quality of life, promote environmental stewardship, and
-            foster economic growth.
-          </motion.p>
+            At Goodhope Engineering Consulting, our vision is to be a leading
+            engineering consultancy firm recognized for our commitment to
+            excellence, innovation, and sustainable solutions. We strive to
+            create a positive impact on the communities we serve by delivering
+            projects that enhance quality of life, promote environmental
+            stewardship, and foster economic growth.
+          </motion.p> */}
         </div>
       </div>
       <div>
@@ -128,7 +127,7 @@ const About = () => {
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 1, ease:"linear" }}
+            transition={{ duration: 1, delay: 1, ease: "linear" }}
             className="basis-[45%] bg-white rounded-3xl hover:shadow-2xl shadow-3xl  duration-100 transition ease-linear px-4 py-6"
           >
             <div className="flex p-2 gap-1">
@@ -147,18 +146,15 @@ const About = () => {
               OUR MISSION
             </h1>
             <p className="mt-10 text-xl sma:text-lg mda:text-lg font-Nunito text-black">
-              At Goodhope Engineering Consulting, our mission is to deliver innovative and
-              reliable civil and structural engineering solutions that drive
-              sustainable development. We are committed to excellence,
-              integrity, and collaboration — ensuring every project adds value
-              to clients, strengthens communities, and stands the test of time.
+              To deliver purposeful and sustainable engineering solutions that
+              meet clients’ needs and drive lasting impact.
             </p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 1, ease:"linear" }}
+            transition={{ duration: 1, delay: 1, ease: "linear" }}
             className="basis-[45%] bg-[#0047AB] hover:shadow-2xl shadow rounded-3xl duration-100 transition ease-linear px-4 py-6"
           >
             <div className="flex p-2 gap-1">
@@ -177,19 +173,18 @@ const About = () => {
               OUR VALUES
             </h1>
             <p className="mt-10 text-xl sma:text-lg mda:text-lg font-Nunito text-white">
-              At Goodhope Engineering Consulting, our values shape everything we do. We
-              uphold integrity, pursue excellence, and embrace innovation to
-              deliver forward-thinking solutions. With a focus on sustainability
-              and collaboration, we build responsibly and create lasting value
-              for clients and communities.
+              We operate with integrity, uphold the highest standard of
+              professionalism, ensure uncompromising quality, and strive for
+              excellence in every solution we deliver.
             </p>
           </motion.div>
         </div>
       </div>
-      <div>
-      </div>
-      <div className="mt-8 mb-8 mx-8 sma:mx-4 mda:mx-4">
-        <h1 className="text-center mb-10 mt-10 text-4xl sma:text-3xl mda:text-3xl font-Sora font-semibold">Facts Abouts Our Company</h1>
+      <div></div>
+      <div className="mt-12 mb-8 mx-8 sma:mx-4 mda:mx-4">
+        <h1 className="text-center mb-10 mt-10 text-4xl sma:text-3xl mda:text-3xl font-Sora font-semibold">
+         OUR CORE VALUES
+        </h1>
         <div className="flex sma:flex-col-reverse mda:flex-col items-end my-16 justify-around ">
           <div>
             <div className="">
@@ -206,9 +201,11 @@ const About = () => {
                   key={x.Id}
                   className="bg-white/20 w-[350px] shadow-lg h-[300px] sma:h-full mda:h-full rounded-md gap-4 px-4 pt-6 mda:w-[98%] sma:w-[98%]"
                 >
-                  <img src={x.image} className=" w-16 h-16  sma:text-3xl mda:text-3xl font-Sora font-medium  mb-12 flex" />
-                    
-                  
+                  <img
+                    src={x.image}
+                    className=" w-16 h-16  sma:text-3xl mda:text-3xl font-Sora font-medium  mb-12 flex"
+                  />
+
                   <h1 className="text-lg  mt-5  font-Sora font-medium text-[#000000]">
                     {x.Heading}
                   </h1>
@@ -220,13 +217,8 @@ const About = () => {
             </div>
           </div>
         </div>
-          
-          
-          
-          
-          
-          
-          {/* <div className="grid grid-cols-2 mt-14 sma:grid-cols-1 mda:grid-cols-1 gap-6 justify-around">
+
+        {/* <div className="grid grid-cols-2 mt-14 sma:grid-cols-1 mda:grid-cols-1 gap-6 justify-around">
               {
                 FactsComp.map((x) => (
                   <div key={x.Id} className="flex gap-3">
@@ -249,20 +241,19 @@ const About = () => {
           <div className="grid grid-cols-3 sma:grid-cols-1 mda:grid-cols-1 gap-6 my-16 justify-around ">
             {AboutTeam.map((x) => (
               <motion.div
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.5, delay: x.Id * 0.3 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: x.Id * 0.3 }}
                 key={x.Id}
                 className="bg-[#EBEBEB] flex flex-col justify-center items-center shadow rounded-md duration-100 transition ease-linear px-4 py-6"
               >
-                
                 <img
                   src={x.img}
                   alt={x.alt}
                   className="w-[250px] h-[250px] rounded-[100%] "
                 />
-                <h2 className="text-2xl sma:text-xl mda:text-xl font-Sora font-medium mt-4 text-[#415D43]">
+                <h2 className="text-2xl sma:text-xl uppercase mda:text-xl font-Sora font-medium mt-4 text-[#415D43]">
                   {x.name}
                 </h2>
                 <p className="text-sm font-Nunito mt-2 font-normal">

@@ -25,7 +25,7 @@ const Services = () => {
         <section className="flex sma:flex-col mda:flex-col sma:px-5 mda:px-5 justify-around items-start bg-white ">
           <div className=" lg:mx-8 lg:basis-[35%] pt-8 rounded-lg">
             <h1 className="text-3xl sma:text-2xl mda:text-2xl uppercase font-Playfair">
-              COMPREHENSIVE CIVIL ENGINEERING SERVICES
+              COMPREHENSIVE ENGINEERING SERVICES
             </h1>
           </div>
           <div className="basis-[40%] pt-8">
@@ -34,7 +34,7 @@ const Services = () => {
               client's most complicated challenges.
             </p>
             <p className="mt-8 text-base font-light font-Sora text-[#415D43]">
-              At GoodHope Consulting Engineering, we are more than builders — we are
+              At GoodHope Consulting Engineers, we are more than builders — we are
               partners in turning your vision into lasting reality. With years
               of proven expertise across civil, structural, and project
               management sectors, we deliver projects that stand the test of
@@ -56,13 +56,17 @@ const Services = () => {
           <h1 className="text-4xl sma:text-2xl mda:text-2xl font-Anek">
             WHAT WE OFFER
           </h1>
-          <div className="flex  mt-12 sma:mt-6 mda:mt-6 justify-center mb-8 items-center gap-5">
+          <div className="flex flex-wrap mt-12 sma:mt-6 mda:mt-6 justify-center mb-8 items-center sma:gap-1 mda:gap-1 lg:gap-5">
             {Servico.map((x) => (
               <button key={x}
               onClick={() => handleClick(x)}
-                className="cursor-pointer transition-all bg-[#1ED2A5] text-white sma:h-14 mda:h-14 lg:px-4 sma:px-2 mda:px-2 py-2 mb-8 rounded-lg
-                    border-blue-600 border-b-[4px] hover:brightness-110 sma:text-sm mda:text-sm
-                    active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
+                className={`cursor-pointer transition-all px-4 py-2 mb-4 rounded-lg border font-Anek text-sm
+              ${
+                filter === x
+                  ? "bg-green-600 text-white border-green-700"
+                  : "bg-neutral-200 text-black border-green-600 hover:brightness-110"
+              }
+            `}
               >
                 {x}
               </button>
@@ -115,7 +119,7 @@ const Services = () => {
                   <h1 className="text-6xl font-light text-amber-300 text-center sma:text-2xl mda:text-2xl font-Sora">{x.Number}</h1>
                   
                   {/* <img src={x.Arrow} className="float-right ml-8" alt="" /> */}
-                  <h3 className="text-xl font-Anek mt-8 font-extralight">{x.StepText}</h3>
+                  
                   <h1 className="text-xl font-Anek mt-8 mb-3 font-">{x.StepTitle}</h1>
                   <p className="text-base font-Nunito font-light mb-5">{x.Summary}</p>
                 </motion.div>

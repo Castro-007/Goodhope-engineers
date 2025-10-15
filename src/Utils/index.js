@@ -224,14 +224,19 @@ export const ProjectHome = [
   },
 ];
 
+export const Affiliates = [
+  {
+    Id: 1,
 
+  },
+]
 
 export const AboutTeam = [
   {
     Id: 1,
     img: Team1,
     alt: "CEO Image",
-    name: "ENGR. OLUMIDE Ajayi",
+    name: "ENGR. OLUMIDE AJAYI",
     position: "Founder & CEO",
     email: "Ajayi@goodhopeconsult.com",
   },
@@ -299,7 +304,7 @@ export const FactsComp = [
   {
     Id: 4,
     image: Customer,
-    Heading: "Customer-Centered Service",
+    Heading: "Client-Centric",
     text: "Our clients are at the core of our mission. We take the time to listen, understand, and customize our services to meet their needs while exceeding expectations.",
   },
 ];
@@ -363,97 +368,54 @@ export const ServicesWeDo= [
     ServiceTitle: "We believe every great project begins with a strong design. We combine creativity, functionality, and technical expertise to deliver designs that are both innovative and practical.",
     image: PDesign
   },
+  
+  
   {
     Id:"02",
-    Category: "Civil Engineering",
-    Service: "Construction Management",
-    ServiceTitle: "We plan, coordinate, and oversee every stage of construction to ensure projects are delivered on time, within budget, and to the highest quality standards.",
-    image: CManage
-  },
-  {
-    Id:"03",
-    Category: "Civil Engineering",
-    Service: "Site Evaluation",
-    ServiceTitle: "Our construction management service ensures that every project is executed efficiently, safely, and to the highest standard",
-    image: SiteE
-  },
-  {
-    Id:"04",
     Category: "Civil Engineering",
     Service: "Drainage and Stormwater System",
     ServiceTitle: "Our drainage solutions prevent flooding and erosion by effectively managing surface water through sustainable engineering practices.",
     image: Sewer, 
   },
+
   {
-    Id:"05",
-    Category: "Civil Engineering",
-    Service: "Water Supply and Sewage Networks",
-    ServiceTitle: "We develop reliable water distribution and wastewater systems that promote healthy communities and environmental protection.",
-    image: EngCon
-  },
-  {
-    Id:"06",
-    Category: "Civil Engineering",
-    Service: "Transportation Planning",
-    ServiceTitle: "We provide strategic traffic flow and transportation analysis to optimize accessibility, mobility, and road safety in urban developments.",
-    image: TransportPlan
-  },
-  {
-    Id:"10",
+    Id:"03",
     Category: "Civil Engineering",
     Service: "Site Development & Earthworks",
     ServiceTitle: "From grading to land preparation, we ensure your project site is properly designed for stability, functionality, and ease of construction.",
     image: SiteEarth
   },
   {
-    Id:"07",
+    Id:"04",
     Category: "Structural Engineering",
     Service: "Structural Design & Analysis",
     ServiceTitle: "We create robust designs that balance safety, performance, and efficiency using advanced modeling and engineering tools.",
     image: StrucDes
   },
   {
-    Id:"08",
+    Id:"05",
     Category: "Structural Engineering",
     Service: "Building Reinforcement & Retrofitting",
     ServiceTitle: "We strengthen existing structures through advanced reinforcement and retrofitting techniques that meet modern safety codes.",
     image: Reinforce
   },
+ 
   {
-    Id:"09",
-    Category: "Structural Engineering",
-    Service: "Seismic and Wind Load Analysis",
-    ServiceTitle: "Our engineers assess structures for wind and earthquake resistance to ensure safety in all environmental conditions.",
-    image: SeismicLoad
-  },
-  {
-    Id:"11",
+    Id:"06",
     Category: "Structural Engineering",
     Service: "Site Supervision",
     ServiceTitle: "Our structural experts monitor on-site works to ensure quality materials, correct assembly, and compliance with structural standards.",
     image: Project6
   },
   {
-    Id:"12",
+    Id:"07",
     Category: "Project Management",
     Service: "Project Planning & Scheduling",
     ServiceTitle: "We define project goals, timelines, and milestones to ensure smooth execution and efficient resource allocation.",
     image: ProjPlan
   },
-  {
-    Id:"13",
-    Category: "Project Management",
-    Service: "Cost Estimation & Budget Control",
-    ServiceTitle: "Our team manages budgets with accuracy, keeping projects financially on track without compromising quality.",
-    image: CostEstimation
-  },
-  {
-    Id:"14",
-    Category: "Project Management",
-    Service: "Quality Assurance & Risk Management",
-    ServiceTitle: "We enforce strict quality standards and mitigate potential risks to ensure dependable project outcomes.",
-    image: QualityRisk
-  },
+  
+  
 ]
 
 
@@ -462,7 +424,6 @@ export const HowWeWork = [
     Id: 1,
     image:ConstructIcon,
     Number: "01",
-    StepText:"We Listen!",
     StepTitle:"Consultation & Project Brief",
     Arrow: HoriArrow,
     Summary: "We begin with a detailed consultation to understand your project goals, site conditions, and technical requirements. Our team reviews your ideas, budget, and timelines to create a clear project brief and define the best approach for your needs.",
@@ -471,7 +432,6 @@ export const HowWeWork = [
     Id: 2,
     image:Compass,
     Number: "02",
-    StepText:"We Design!",
     StepTitle:"Design & Planning",
     Arrow: HoriArrow,
     Summary: "Our engineers and designers develop precise plans, structural models, and cost estimates that align with safety standards and industry best practices. We ensure every design is functional, efficient, and tailored to meet your vision.",
@@ -480,7 +440,6 @@ export const HowWeWork = [
     Id: 3,
     image:CraneIcon,
     Number: "03",
-    StepText:"We Deliver!",
     StepTitle:"Execution & Delivery",
     Summary: "Once approved, we oversee every stage of implementation — from construction supervision and quality control to final project handover. Our goal is to deliver durable, sustainable, and high-quality results on time and within budget.",
   },

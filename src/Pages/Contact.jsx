@@ -43,8 +43,8 @@ const Contact = () => {
       <section className=' mt-8 mb-8'>
         <div className='flex sma:flex-col mda:flex-col justify-around'>
           <div className='basis-[45%] rounded-2xl shadow-xl bg-[#EBEBEB] px-3 py-2 '>
-            <h1 className='text-lg mx-6 font-Playfair font-normal'>GET A QUOTE</h1>
-            <h1 className='text-5xl mx-6 my-6 font-Anek font-medium tracking-wide'>Request a Quote for Your Next Project</h1>
+            <h1 className='text-lg mx-6 font-Playfair font-normal'>CONTACT US</h1>
+            <h1 className='text-5xl mx-6 my-6 font-Anek font-medium tracking-wide capitalize'>Request our Services for Your Next Project</h1>
             <p className='text-lg mx-6 font-Anek font-light'>We'll get back to you as soon as possible</p>
           <form onSubmit={onSubmit} className='mt-8 mx-8 sma:mx-3 mda:mx-3'>
             <div className='flex sma:gap-4 mda:gap-4 justify-between'>
@@ -124,14 +124,14 @@ const Contact = () => {
 
                 </div>
                 <div className='my-6'>
-                  <label htmlFor="Project" className='pb-4'>Project Description*</label>
+                  <label htmlFor="Project" className='pb-4'>Brief Description*</label>
                   <textarea name="Project" cols={20} rows={8} className='block resize-none mt-4 rounded-lg border-[1px] border-[#1ED2A5] w-full h-full bg-transparent font-Nunito outline-1 focus:outline-none px-2 py-1' id="" ></textarea>
                 </div>
                 <button className='flex text-center justify-center items-center gap-2 hover:opacity-85 rounded-md bg-[#1ED2A5] p-2 text-white' type="submit">Send message <FaPaperPlane/></button>
           </form>
           </div>
           <div className='basis-[40%] sma:mt-8 mda:mt-8'>
-            <img src={ContractorBg} className='lg:w-[90%] rounded-lg ' alt="" />
+            <img src={ContractorBg} className='lg:w-[90%] rounded-lg ' alt="Design Contractors on site" />
           </div>
         </div>
       </section>

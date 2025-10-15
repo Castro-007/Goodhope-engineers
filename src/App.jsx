@@ -8,8 +8,8 @@ import Project from './Pages/Project'
 import Contact from './Pages/Contact'
 import NotFound from './Pages/NotFound'
 import Services from './Pages/Services'
-import './App.css'
 import ScrollToTop from './Components/ScrollToTop'
+import ProjectPost from './Pages/ProjectPost'
 
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='*' element={<NotFound/>}/>
         <Route path='/Services' element={<Services/>}/>
+        <Route path='/Projects/:slug' element={<ProjectPost />}/>
       </Routes>
       <Footer/>
     </div>

@@ -71,7 +71,7 @@ const Home = () => {
               transition={{ duration: 1, delay: 1.5 }}
               viewport={{once: true}}
             className="text-2xl max-w-xl font-Playfair uppercase font-medium text-white pt-8 px-8 sma:text-2xl mda:text-2xl">
-              Quality construction, innovative designs, and sustainable
+              innovative designs, and sustainable
               solutions for every project
             </motion.h1>
 
@@ -145,10 +145,10 @@ const Home = () => {
           >
             <div className="">
               <h1 className="text-2xl font-semibold text-[#4C9683] tracking-tighter font-Playfair">
-                Uncover the Legacy of Goodhope Engineering Consult
+                Uncover the Legacy of Goodhope Consulting Engineers
               </h1>
               <p className="text-lg tracking-[-0.01em] text-black  font-Nunito pt-4">
-                Goodhope Engineering Consult is a forward-thinking engineering
+                Goodhope Consulting Engineers is a forward-thinking engineering
                 solutions provider committed to delivering reliable, innovative,
                 and sustainable results. Founded by a team of experienced
                 professionals, the firm specializes in offering tailored
@@ -186,7 +186,7 @@ const Home = () => {
 
           <div className="mt-10">
             <h1 className="text-3xl text-start font-Playfair flex items-center text-black pt-8">
-              <TbArrowBadgeRight className="text-black" /> OUR OFFERINGS
+              <TbArrowBadgeRight className="text-black" /> OUR SERVICE OFFERINGS
             </h1>
             <div className="flex lg:border-y lg:border-[#415D43] py-8 sma:flex-col mt-14 mda:flex-col justify-between items-start">
               <div className="basis-[30%] sma:mb-4 mda:mb-4 ">

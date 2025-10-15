@@ -10,11 +10,11 @@ const Footer = () => {
       <section className="flex sma:flex-col mda:flex-col justify-around items-start bg-[#3486A0] text-white py-6 pt-12 sma:px-4 space-y-5 mda:px-4">
         <div className="basis-[30%] ">
           <NavLink to="/">
-          <img src={LogosWhite} alt="Goodhope Logo" className="w-44 mb-3" />
+          <img src={LogosWhite} alt="Goodhope Logo" className="w-52 bg-top bg-cover object-contain  mb-3" />
 
           </NavLink>
           {/* © 2024 Goodhope Consulting Engineering Services. All rights reserved. */}
-          <p className=" text-base font-light font-Nunito ">
+          <p className=" text-sm font-light font-Nunito ">
             Goodhope Consulting Engineering Services is an independent firm
             specializing in civil and structural engineering, as well as project
             development. We deliver professional consultancy solutions to
@@ -23,14 +23,9 @@ const Footer = () => {
             commitment is to create sustainable results that stand the test of
             time.
           </p>
-          <h3 className="font-Playfair mt-8 ml-4 text-lg">Follow</h3>
+          <h3 className="font-Playfair mt-8 ml-4 text-lg">Follow us</h3>
           <div className="flex gap items-center">
-            <a
-              href=""
-              className="rounded-full transition-all delay-100 p-3 hover:text-[#EAFF47] ease-linear text-white group "
-            >
-              <FaInstagram className="text-xl delay-100 cursor-pointer ease-in-out" />
-            </a>
+            
             <a
               href="https://www.linkedin.com"
               target="_blank"
@@ -39,14 +34,7 @@ const Footer = () => {
             >
               <FaLinkedin className="text-xl  cursor-pointer delay-100 ease-in-out" />
             </a>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full p-3 transition-all delay-100 hover:text-[#EAFF47] ease-linear text-white  group"
-            >
-              <FaXTwitter className="text-xl  cursor-pointer delay-100 ease-in-out" />
-            </a>
+            
             <a
               href="https://www.Facebook.com"
               target="_blank"

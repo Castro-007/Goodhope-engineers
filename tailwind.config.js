@@ -33,16 +33,24 @@ export default {
         'Aboutbg': "url('/assets/Images/cranesz.jpg')",
         'Lookforbg': "url('/assets/Images/Lookfor.jpg')",
         'Servwedobg': "url('/assets/Images/Services/wedo-sketch.jpg')",
+        'ProjectBg': "url('/assets/Images/projectBg.jpg')",
       },
       keyframes: {
         wiggle: {
           '0%': { transform: 'rotate(-180deg)' },
           '101%': { transform: 'rotate(3deg)' },
-        }
+        },
+        gradientMove: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
       },
       animation: {
         wiggle: 'wiggle 8s linear infinite',
-      }
+        gradientMove: "gradientMove 10s ease infinite",
+      },
+      
     },
   },
   plugins: [],
