@@ -19,12 +19,12 @@ const Navbar = () => {
     transition: "all .5s ease-in-out",
 }}
     >
-    <div className='py-4 mb-8 mx-8 sma:ml-5 mda:ml-5  '>
+    <div className='py-4 mx-8 sma:ml-5 mda:ml-5  '>
         <nav className='bg-white/70 rounded-xl max-w-6xl sma:max-w-3xl mda:max-w-3xl w-full backdrop-sepia-0 bg-opacity-0 backdrop-blur-xs backdrop-filter py-1 px-3'>
             <ul className='flex justify-between mx-4 items-center'>
                 <h1 className='font-Raleway z-[999]  '>
                   <NavLink to='/'>
-                  <img src={LogosBlack} alt="Good Hope logo" className='w-44  sma:w-28 mda:w-28' />
+                  <img src={LogosBlack} alt="Good Hope logo" className='w-28  sma:w-28 mda:w-28' />
                   </NavLink>
                 </h1>
                 <li className='flex sma:hidden mda:hidden text-white uppercase underline-offset-2 sma:text-base mda:text-base gap-5'>
