@@ -20,7 +20,7 @@ const Services = () => {
 
 
   return (
-    <div className="  mx-6 sma:mx-4 mda:mx-4 my-6">
+    <div className="  mx-6 sma:mx- mda:mx- my-6">
       <div className="bg-white px-2 py-3 shadow-lg rounded-lg">
         <section className="flex sma:flex-col mda:flex-col sma:px-5 mda:px-5 justify-around items-start bg-white ">
           <div className=" lg:mx-8 lg:basis-[35%] pt-8 rounded-lg">
@@ -51,7 +51,7 @@ const Services = () => {
           />
         </div>
       </div>
-      <section className="mt-20 lg:px-14 px-6">
+      <section className="mt-20 lg:px-14 px-">
         <div>
           <h1 className="text-4xl sma:text-2xl mda:text-2xl font-Anek">
             WHAT WE OFFER

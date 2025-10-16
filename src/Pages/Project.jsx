@@ -64,7 +64,7 @@ const [filter, setFilter] = useState('ALL SECTORS')
                 </motion.p>
               </div>
             </div>
-            <div className="flex flex-wrap mt-12 sma:mt-6 mda:mt-6 justify-center mb-8  sma:gap-1 mda:gap-1 lg:gap-5">
+            <div className="flex flex-wrap mt-12 sma:mt-6 mda:mt-6 justify-center mb-8 sma:gap-1 mda:gap-1 lg:gap-5">
             {categories.map((x) => (
               <button key={x}
               onClick={() => handleClick(x)}
