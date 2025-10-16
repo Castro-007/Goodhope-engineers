@@ -24,7 +24,7 @@ const Navbar = () => {
             <ul className='flex justify-between mx-4 items-center'>
                 <h1 className='font-Raleway z-[999]  '>
                   <NavLink to='/'>
-                  <img src={LogosBlack} alt="Good Hope logo" className='w-44  sma:w-32 mda:w-32' />
+                  <img src={LogosBlack} alt="Good Hope logo" className='w-44 sma:w-44 mda:w-44' />
                   </NavLink>
                 </h1>
                 <li className='flex sma:hidden mda:hidden text-white uppercase underline-offset-2 sma:text-base mda:text-base gap-5'>
