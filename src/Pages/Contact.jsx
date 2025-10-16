@@ -51,9 +51,9 @@ const Contact = () => {
 
             <div className="relative ">
       <input
-        placeholder="john@example.com"
+        placeholder="JOHN"
         className="peer h-10 w-full border-b-2 border-gray-300 text-black bg-transparent font-Nunito placeholder-transparent focus:outline-none focus:border-[#1ED2A5]"
-        required=""
+        required
         id="First Name"
         name="First Name"
         type="text"
@@ -66,9 +66,9 @@ const Contact = () => {
         </div>
         <div className='relative'>
       <input
-        placeholder="password"
+        placeholder="DOE"
         className="peer h-10 w-full border-b-2 border-gray-300 text-black bg-transparent font-Nunito placeholder-transparent focus:outline-none focus:border-[#1ED2A5]"
-        required=""
+        required
         id="lastName"
         name="Last Name"
         type='text'
@@ -112,7 +112,7 @@ const Contact = () => {
     </div>
     <div className='mt-12 relative'>
                   <label htmlFor="Services" className='absolute font-Anek uppercase left-0 -top-3.5 text-[#1ED2A5] text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-[#1ED2A5] peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#1ED2A5] peer-focus:text-sm'>Service of interest</label>
-                <select name="Services" className='peer h-10 w-full border-b-2 border-gray-300 text-black bg-transparent font-Nunito placeholder-transparent focus:outline-none focus:border-[#1ED2A5]' id="">
+                <select name="Services" className='peer h-10 px-2 w-full border-b-2 border-gray-300 text-black bg-transparent font-Nunito placeholder-transparent focus:outline-none focus:border-[#1ED2A5]' id="">
                   <option value="">Select a service</option>
                   {
                     ServicesWeDo.map((x) => (

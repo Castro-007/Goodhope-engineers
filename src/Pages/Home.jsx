@@ -364,8 +364,8 @@ const Home = () => {
             <p className="font-Nunito sma:text-2xl mda:text-2xl text-3xl font-medium mb-3 mt-6">
               NEXT ENGINEERING PROJECT?
             </p>
-            <h1 className="text-4xl font-Varela sma:text-2xl mda:text-2xl uppercase font-medium lg:py-6 ">
-              GET A QUOTE FOR YOUR NEXT PROJECT
+            <h1 className="text-4xl font-Varela sma:text-2xl mda:text-2xl uppercase font-medium lg:py-6  ">
+              REQUEST OUR SERVICE FOR YOUR NEXT PROJECT
             </h1>
             <button className="my-8">
               <NavLink

@@ -6,14 +6,13 @@ import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { NavBlink } from "../Utils";
 const Footer = () => {
   return (
-    <div>
+    <div className="bg-[#3486A0]">
       <section className="flex sma:flex-col mda:flex-col justify-around items-start bg-[#3486A0] text-white py-6 pt-12 sma:px-4 space-y-5 mda:px-4">
         <div className="basis-[30%] ">
           <NavLink to="/">
           <img src={LogosWhite} alt="Goodhope Logo" className="w-52 bg-top bg-cover object-contain  mb-3" />
 
           </NavLink>
-          {/* © 2024 Goodhope Consulting Engineering Services. All rights reserved. */}
           <p className=" text-sm font-light font-Nunito ">
             Goodhope Consulting Engineering Services is an independent firm
             specializing in civil and structural engineering, as well as project
@@ -106,6 +105,10 @@ Lekki Phase 1, Lagos.
           </div>
         </div>
       </section>
+      <div className="text-white text-center sma:text-sm mda:text-sm font-Anek">
+
+            © 2025 Goodhope Consulting Engineers. All rights reserved.
+      </div>
     </div>
   );
 };
