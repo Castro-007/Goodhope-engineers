@@ -330,21 +330,19 @@ const Home = () => {
             OUR CERTIFICATIONS
           </h1>
           <div className=" overflow-hidden w-full sma:mt-12 mb-10 ">
-            <motion.div
-              className="py-4 grid lg:grid-cols-4 sma:grid-cols-2 mda:grid-cols-2 gap-5 sma:gap-2 mda:gap-2 whitespace-nowrap bg-blend-multiply items-center justify-center"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
+            <div className="py-4 grid lg:grid-cols-4 sma:grid-cols-2 mda:grid-cols-2 gap-5 sma:gap-2 mda:gap-2 whitespace-nowrap bg-blend-multiply items-center justify-center">
               {Affiliates.map((x, i) => (
-                <img
+                <motion.img
                   key={`${x.Id}-${i}`} // stable + unique key
-                  className="text-xs font-Sora shrink-0 bg-blend-multiply w-48  sma:w-44 mda:w-44 font-medium  h-24  hover:opacity-100 duration-300"
+                  initial={{ x: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: x.Id * 0.3 }}
+                  viewport={{ once: true }}
+                  className="text-xs font-Sora shrink-0 bg-blend-multiply w-48  sma:w-44 mda:w-44 font-medium  h-24  hover:opacity-100 duration-100"
                   src={x.Logo}
                 />
               ))}
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -374,7 +372,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-     
 
       {/* <div className="fixed bottom-8 right-8 animate-bounce bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-500 z-50">
         <FaWhatsapp className="text-3xl" />
