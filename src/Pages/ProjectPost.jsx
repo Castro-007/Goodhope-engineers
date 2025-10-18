@@ -88,7 +88,7 @@ const ProjectPost = () => {
           </div>
 
           {blogpost.images && blogpost.images.length > 0 && (
-            <div className="flex sma:flex-col gap-3 mda:flex-col sma:gap-4 mda:gap-4 justify-around my-12 lg:max-w-5xl">
+            <div className="grid lg:grid-cols-3 w-full sma:grid-cols-1 mdaa:grid-cols-2 mda:grid-cols-1 gap-3 sma:gap-4 mda:gap-4 my-12 ">
               {blogpost.images.map((img, i) => {
                 const url = img?.asset?.url;
                 if (!url) return null;
@@ -97,7 +97,7 @@ const ProjectPost = () => {
                     src={url}
                     key={i}
                     alt={img.alt || `${blogpost.title} image ${i + 1}`}
-                    className="w-full mdaa:gap-4 sm:w-[48%]  h-48 object-cover rounded-md shadow"
+                    className=" mdaa:gap-4 w-[400px] h-[270px] object-cover rounded shadow"
                   />
                 );
               })}
