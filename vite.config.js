@@ -10,4 +10,8 @@ export default defineConfig({
     port: process.env.PORT || 5173,
   },
   assetsInclude: ['**/*.PNG'],
+    build: {
+    outDir: 'dist', // ✅ Default safe folder for built files
+    emptyOutDir: true, // ✅ Clears dist before rebuilding
+  },
 })
