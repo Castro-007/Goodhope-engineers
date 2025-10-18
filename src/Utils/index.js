@@ -37,6 +37,10 @@ import Compass from "../assets/Images/Services/compass_icon1.png"
 import ConstructIcon from "../assets/Images/Services/construction_icon2.png"
 import CraneIcon from "../assets/Images/Services/crane_icon3.png"
 import HoriArrow from "../assets/Images/Services/horizontal_arrow.png"
+import ECSA from "../assets/Images/ECSA.png"
+import CESA from "../assets/Images/CESA.png"
+import NSE from "../assets/Images/society.jpg"
+import COREN from "../assets/Images/coren1.jpeg"
 
 
 
@@ -227,6 +231,22 @@ export const ProjectHome = [
 export const Affiliates = [
   {
     Id: 1,
+    Logo:CESA
+
+  },
+  {
+    Id: 2,
+    Logo:ECSA
+
+  },
+  {
+    Id: 3,
+    Logo:COREN
+
+  },
+  {
+    Id: 4,
+    Logo:NSE
 
   },
 ]

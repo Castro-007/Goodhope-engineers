@@ -5,6 +5,7 @@ import NumbersAni from "../Components/NumbersAni";
 
 import {
   Achievements,
+  Affiliates,
   imageSlider,
   ScrollText,
   ServiceHome,
@@ -57,29 +58,30 @@ const Home = () => {
         <div className="bg-homebg h-[550px] lg:bg-fixed max-w-6xl relative rounded-md bg-cover bg-center sma:bg-top mda:bg-top ">
           <div className="absolute inset-0  gradient-hero bg-black/20 w-full opacity-80"></div>
           <div>
-            <motion.h1 
-            initial={{ opacity: 0, y: 40 }}
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1 }}
-              viewport={{once: true}}
-            className="text-5xl font-Sora font-medium text-white pt-32 px-8 sma:text-3xl mda:text-3xl">
+              viewport={{ once: true }}
+              className="text-5xl font-Sora font-medium text-white pt-32 px-8 sma:text-3xl mda:text-3xl"
+            >
               Building Dreams
             </motion.h1>
             <motion.h1
-             initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.5 }}
-              viewport={{once: true}}
-            className="text-2xl max-w-xl font-Playfair uppercase font-medium text-white pt-8 px-8 sma:text-2xl mda:text-2xl">
-              innovative designs, and sustainable
-              solutions for every project
+              viewport={{ once: true }}
+              className="text-2xl max-w-xl font-Playfair uppercase font-medium text-white pt-8 px-8 sma:text-2xl mda:text-2xl"
+            >
+              innovative designs, and sustainable solutions for every project
             </motion.h1>
 
             <motion.button
-             initial={{ opacity: 0, x: -40 }}
+              initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 1.9 }}
-              viewport={{once: true}}
+              viewport={{ once: true }}
               className="bg-white text-center ml-8 font-Nunito w-48 rounded-2xl h-14 mt-14 relative z-0 text-black text-xl sma:text-base mda:text-base font-medium group"
               type="button"
             >
@@ -166,7 +168,7 @@ const Home = () => {
             <motion.div
               key={x.Id}
               className=" flex sma:flex-col mda:flex-col justify-end gap-2 "
-              initial={{ opacity: 0, y: 160 }}
+              initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: x.Id * 0.3 }}
               viewport={{ once: true }}
@@ -246,9 +248,9 @@ const Home = () => {
                 tailored to your every need
               </h1>
               <button className="font-Sora text-xl mt-8 hover:scale-[1.01] overflow-hidden duration-300 ease-linear">
-                <NavLink to='/Services' className="flex items-center gap-2">
-                  <MdArrowRightAlt className="bg-[#1ED2A5] text-white text-4xl " /> Learn
-                  More
+                <NavLink to="/Services" className="flex items-center gap-2">
+                  <MdArrowRightAlt className="bg-[#1ED2A5] text-white text-4xl " />{" "}
+                  Learn More
                 </NavLink>
               </button>
               <div className="flex sma:flex-col mda:flex-col justify-center gap-2 items-center overflow-hidden rounded-3xl mt-8">
@@ -294,69 +296,63 @@ const Home = () => {
             </h1>
 
             <div className="grid grid-cols-3 sma:grid-cols-1 mt-7 mda:grid-cols-1 gap-4">
-              
-                {Testimonial.map((x) => (
-                  <motion.div
-                    key={x.Id}
-                    initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.5, delay: x.Id * 0.5 }}
-                    className={x.style}
-                  >
-                    <div className="flex">
-                      {x.svg.map((star, i) => (
-                        <img
-                          key={i}
-                          src={star}
-                          alt=""
-                          className="flex w-6 h-6"
-                        />
-                      ))}
-                    </div>
-                    <p className="font-Manrope font-medium mt-3">{x.Text}</p>
-                    <figcaption className="flex items-center mt-6 space-x-3 rtl:space-x-reverse">
-                      <cite className="pe-3 border-r-2 border-gray-200 font-medium text-gray-900 ">
-                        {x.Client}
-                      </cite>
-                      <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
-                        {x.From}
-                      </cite>
-                    </figcaption>
-                  </motion.div>
-                ))}
-              
+              {Testimonial.map((x) => (
+                <motion.div
+                  key={x.Id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: x.Id * 0.5 }}
+                  className={x.style}
+                >
+                  <div className="flex">
+                    {x.svg.map((star, i) => (
+                      <img key={i} src={star} alt="" className="flex w-6 h-6" />
+                    ))}
+                  </div>
+                  <p className="font-Manrope font-medium mt-3">{x.Text}</p>
+                  <figcaption className="flex items-center mt-6 space-x-3 rtl:space-x-reverse">
+                    <cite className="pe-3 border-r-2 border-gray-200 font-medium text-gray-900 ">
+                      {x.Client}
+                    </cite>
+                    <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
+                      {x.From}
+                    </cite>
+                  </figcaption>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* <div>
+        <div className="mt-8">
           <h1 className="text-3xl text-start font-Playfair text-[#415D43] pt-8 lg:pb-16">
-            OUR AFFILIATES
+            OUR CERTIFICATIONS
           </h1>
           <div className=" overflow-hidden w-full sma:mt-12 mb-10 ">
             <motion.div
-              className="py-4 flex gap-5 sma:gap-2 mda:gap-2 whitespace-nowrap bg-blend-multiply items-center justify-center"
-              animate={{ x: ["0%", "101%"] }}
-              transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+              className="py-4 grid lg:grid-cols-4 sma:grid-cols-2 mda:grid-cols-2 gap-5 sma:gap-2 mda:gap-2 whitespace-nowrap bg-blend-multiply items-center justify-center"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              {Affdisplay.map((x, i) => (
+              {Affiliates.map((x, i) => (
                 <img
                   key={`${x.Id}-${i}`} // stable + unique key
-                  className="text-xs font-Sora shrink-0 bg-blend-multiply w-32 sma:w-24 mda:w-24 font-medium  h-16  hover:opacity-100 duration-300"
-                  src={x.img}
+                  className="text-xs font-Sora shrink-0 bg-blend-multiply w-48  sma:w-44 mda:w-44 font-medium  h-24  hover:opacity-100 duration-300"
+                  src={x.Logo}
                 />
               ))}
             </motion.div>
           </div>
-        </div> */}
+        </div>
       </section>
       {/* <hr className="border-t-2 border-[#415D43] max-w-6xl mt-12 sma:mt-8 mda:mt-8" /> */}
 
       <div className="mb-8 mt-8">
         <div className="flex sma:flex-col max-w-6xl bg-Lookforbg relative mda:flex-col bg-cover bg-center sma:bg-top mda:bg-top h-[400px] text-amber-300 justify-center text-center rounded-3xl items-start pt-5 sma:mt-12 mda:mt-12">
-          <div className="absolute inset-0 gradient-hero bg-teal-900/50 w-full opacity-80"></div>
+          <div className="absolute inset-0 gradient-hero bg-teal-900/50 w-full opacity-80 rounded-3xl"></div>
           <div className="relative ">
             <p className="font-Nunito lg:font-extralight font-light sma:text-2xl mda:text-2xl text-3xl">
               LOOKING FOR A QUALIFIED TEAM TO DELIVER YOUR
@@ -378,23 +374,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-          {/* <div className="basis-[50%] text-[#0047AB] text-start w-full py-2 px-4 rounded-md ">
-            <div>
-              <h1 className="text-3xl font-Nunito font-medium mb-6">WHY GOODHOPE ENGINEERS?</h1>
-              <p className="font-Nunito font-extralight text-3xl">LOOKING FOR A QUALIFIED TEAM TO DELIVER YOUR</p>
-              <p className="font-Nunito text-3xl font-medium mt-6">NEXT ENGINEERING PROJECT?</p>
-            </div>
-          </div>
-          <div className="lg:basis-[30%]">
-            <h1 className="text-3xl text-start font-Playfair text-[#415D43] lg:pb-16 pb-8">
-              SPEAK TO AN EXPERT
-            </h1>
-            <button>
-              <NavLink to="/Contact" className="hover:bg-[#415D43] text-[#415D43] font-Nunito border border-[#415D43] hover:text-white rounded-full px-8 py-3 sma:mt-8 duration-300">
-                GET QUOTE
-              </NavLink>
-            </button>
-          </div> */}
+     
 
       {/* <div className="fixed bottom-8 right-8 animate-bounce bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-500 z-50">
         <FaWhatsapp className="text-3xl" />
