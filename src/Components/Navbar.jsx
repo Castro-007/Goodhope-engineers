@@ -4,7 +4,7 @@ import {FaTimes, FaBars} from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 import Headroom from 'react-headroom'
 import { NavBlink } from '../Utils'
-import LogosBlack from "../assets/Images/Logos/GHV3_coloursunrise_blk.svg"
+import LogosBlack from "../assets/Images/Logos/GHV3_coloursunrise_blk_website header.svg"
 
 const Navbar = () => {
 

@@ -1,7 +1,6 @@
 import {FaBuilding, FaDraftingCompass, FaHardHat, FaRoad, FaClipboardCheck,
 } from "react-icons/fa";
 import { MdOutlineEngineering } from "react-icons/md";
-import DesignHills from "../assets/Images/designhills-unsplash.jpg";
 import Team1 from "../assets/Images/Teams/Team1.jpg";
 import Team2 from "../assets/Images/Teams/Team2.jpg";
 import Team3 from "../assets/Images/Teams/Team3.jpg";
@@ -9,18 +8,20 @@ import Team4 from "../assets/Images/Teams/Team4.jpg";
 import Team5 from "../assets/Images/Teams/Team5.jpg";
 import Team6 from "../assets/Images/Teams/Team6.jpg";
 import Clock8 from "../assets/Images/icons8-clock.png";
-import Hammer from "../assets/Images/icons8-hammer.png";
+import Professional from "../assets/Images/icons8-professional.png";
+import Excellence from "../assets/Images/icons8-graduation-cap.png";
+import TeamCollab from "../assets/Images/icons8-teamwork.png";
 import Innovation from "../assets/Images/icons8-innovation.png";
 import Customer from "../assets/Images/icons8-customer-service.png";
 import StarRating from "../assets/Images/icons8-star.png";
 import Project7 from "../assets/Images/Project/Project7.jpg";
 import Project2 from "../assets/Images/Project/Project2.jpg";
-import Project5 from "../assets/Images/Project/Project5.jpg";
+import Project5 from "../assets/Images/Project/Bostwana Academic Hospital.jpeg";
 import Project6 from "../assets/Images/Project/Project6.jpg";
 import Project8 from "../assets/Images/Project/Project8.jpg";
 import EngIntegration from "../assets/Images/Services/Engineering-Integrations.jpg"
 import PDesign from "../assets/Images/Services/PDesign.jpg"
-import CManage from "../assets/Images/Services/CManage.jpg"
+import CManage from "../assets/Images/Services/ConSupervision.jpg"
 import ConstructServ from "../assets/Images/Services/Construct.jpg"
 import SiteE from "../assets/Images/Services/SiteE.jpg"
 import EngCon from "../assets/Images/Services/EngCon.jpg"
@@ -31,6 +32,7 @@ import StrucDes from "../assets/Images/Services/StrucDesAnalysis.jpg"
 import CostEstimation from "../assets/Images/Services/CostEstimation.jpg"
 import Reinforce from "../assets/Images/Services/Reinforce.jpg"
 import SeismicLoad from "../assets/Images/Services/seismicload.jpg"
+import RepairsRehab from "../assets/Images/Services/repairs.jpg"
 import ProjPlan from "../assets/Images/Services/ProjPlan.jpg"
 import QualityRisk from "../assets/Images/Services/quality-risk.jpg"
 import Compass from "../assets/Images/Services/compass_icon1.png"
@@ -91,7 +93,7 @@ export const imageSlider = [
     Id: 3,
     img: "https://static.wixstatic.com/media/a4c183_41a680c0ed504e07b25a16ff251e96fb~mv2.jpg/v1/fill/w_546,h_308,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/GettyImages-183371607.jpg",
     alt: "crane at work",
-    headtxt: "Project Development",
+    headtxt: "Construction Project Management",
   },
 ];
 
@@ -166,14 +168,14 @@ export const ServiceHome = [
     Id: 1,
     SocialIcon: FaHardHat,
     title: "Civil Engineering",
-    text: "Our civil engineering services encompass a wide range of infrastructure projects, including transportation systems, water resources management, environmental engineering, and urban development. We are committed to delivering sustainable and innovative solutions that meet the unique needs of each project.",
+    text: "Our civil engineering services encompasses a wide range of infrastructure project, including infrastructure planning (Roads & Stormwater), water and sanitation, traffic studies and planning and urban/Township planning. We are committed to delivering sustainable and innovative solutions that meet the unique needs of each project.",
   },
   {
     Id: 2,
     SocialIcon: FaBuilding,
     title: "Structural Engineering",
     classNames: " lg:border-l lg:border-[#415D43] lg:pl-4",
-    text: " Our structural engineering team specializes in designing safe, efficient, and cost-effective structures for various applications, including commercial buildings, residential complexes, bridges, and industrial facilities. We utilize advanced analysis and design techniques to ensure the integrity and longevity of our structures.",
+    text: " Our structural engineering team specializes in designing safe, efficient, and cost-effective structures for various applications, including commercial, residential, academic, healthcare buildings, industrial facilities and bridges and culverts. We utilise advanced analysis tools and techniques to ensure the integrity of our structures.",
   },
   {
     Id: 3,
@@ -185,44 +187,37 @@ export const ServiceHome = [
 ];
 
 export const ProjectHome = [
+ 
   {
     Id: 1,
-    img: DesignHills,
-    alt: "Design Hills",
-    title: "Hillside Rock",
-    Abouttext:
-      "A modern architectural masterpiece nestled in the hills, offering breathtaking views and luxurious living.",
-  },
-  {
-    Id: 2,
     img: Project8,
-    alt: "House Frontage",
-    title: "Botswana International University",
+    alt: "Botswana New Student Centre",
+    title: "New Student Centre- Botswana",
     Abouttext:
       "An elegant castle-inspired residence that combines classic design with contemporary amenities.",
   },
   {
-    Id: 3,
+    Id: 2,
     img: Project2,
-    alt: "A Museum Building",
-    title: "Ikoyi Lagos",
+    alt: "A Residential Mansion Ikoyi",
+    title: "Residential Mansion Ikoyi",
     Abouttext:
       "A cultural landmark showcasing art and history, designed to blend seamlessly with its natural surroundings.",
   },
 
   {
-    Id: 5,
+    Id: 3,
     img: Project5,
-    alt: "A spiral building",
-    title: "Red Brick Mansion",
+    alt: "Teaching Hospital-Botswana ",
+    title: "Teaching Hospital-Botswana ",
     Abouttext:
       "A stunning mansion featuring a unique spiral design, offering panoramic views and luxurious living spaces.",
   },
   {
-    Id: 6,
+    Id: 4,
     img: Project6,
-    alt: "A House in the Garden",
-    title: "Red Hill Johannesburg",
+    alt: "University Building South Africa",
+    title: "University Academic Building South Africa",
     Abouttext:
       "A contemporary home that redefines luxury living, with state-of-the-art amenities and exquisite design details.",
   },
@@ -311,21 +306,33 @@ export const FactsComp = [
   },
   {
     Id: 2,
-    image: Hammer,
-    Heading: " Craftsmanship",
-    text: "Our commitment is to provide the highest quality results, ensuring every detail is handled with precision and care.",
+    image: Professional,
+    Heading: " Professionalism",
+    text: "We are devoted to providing a service that is professional to our clientele and consistent with international best practice. We take pride in our work and apply prudence in our craft and skill and our ability to ensure a value proposition of the hight standard",
   },
   {
     Id: 3,
-    image: Innovation,
-    Heading: "Innovation",
-    text: "By embracing creativity and innovative solutions, we consistently enhance our services to provide results that endure.",
+    image: Excellence,
+    Heading: " Excellence",
+    text: "We are committed to delivering exceptional quality in everything we do. Our team of seasoned professionals operated within a robust management framework, ensuring every process is executed with precision, effectiveness, and efficiency. This pursuit of excellence drives us to consistently exceed client expectations and set new benchmarks in service delivery.",
   },
   {
     Id: 4,
+    image: Innovation,
+    Heading: "Innovation",
+    text: "We embrace forward-thinking solutions that challenge convention and drive progress. By integrating emerging technologies, advance engineering methodologies, and creative problem-solving, we deliver results that are both visionary and practical",
+  },
+  {
+    Id: 5,
     image: Customer,
     Heading: "Client-Centric",
     text: "Our clients are at the core of our mission. We take the time to listen, understand, and customize our services to meet their needs while exceeding expectations.",
+  },
+  {
+    Id: 6,
+    image: TeamCollab,
+    Heading: "Collaboration",
+    text: "We believe great outcome are built on strong partnerships. Our teams work closely with clients, consultants, and stakeholders to ensure every project reflects shared goals and collective expertise.",
   },
 ];
 
@@ -393,16 +400,16 @@ export const ServicesWeDo= [
   {
     Id:"02",
     Category: "Civil Engineering",
-    Service: "Drainage and Stormwater System",
-    ServiceTitle: "Our drainage solutions prevent flooding and erosion by effectively managing surface water through sustainable engineering practices.",
+    Service: "Drainage and Stormwater Management",
+    ServiceTitle: "We provide comprehensive drainage and stormwater management services designed to protect your property and infrastructure from flooding and erosion. Using advanced climate data and hydrological modelling, we develop tailored solution that ensure effective water runoff control, compliance with environmental regulations and long-term sustainability.",
     image: Sewer, 
   },
 
   {
     Id:"03",
     Category: "Civil Engineering",
-    Service: "Site Development & Earthworks",
-    ServiceTitle: "From grading to land preparation, we ensure your project site is properly designed for stability, functionality, and ease of construction.",
+    Service: "Civil Infrastructure and Bulk & Earthworks",
+    ServiceTitle: "We design with purpose and precision-never in isolation. Our solutions are seamlessly integrated into existing infrastructure masterplans, ensuring functional alignment and long-term viability. By combining innovative design methodologies with cost-conscious planning, we deliver infrastructure that is not only practical but also economically and environmentally sustainable. ",
     image: SiteEarth
   },
   {
@@ -434,6 +441,20 @@ export const ServicesWeDo= [
     ServiceTitle: "We define project goals, timelines, and milestones to ensure smooth execution and efficient resource allocation.",
     image: ProjPlan
   },
+  {
+    Id:"08",
+    Category: "Structural Engineering",
+    Service: "Repairs and Building Rehabilitation",
+    ServiceTitle: "We extend the life of existing structures through advanced retrofitting techniques that align with modern safety standards and building codes. Our rehabilitation solutions are engineered for durability, cost-efficiency, and regulatory compliance- ensuring renewed performance without compromising integrity.",
+    image: RepairsRehab
+  },
+  {
+    Id:"09",
+    Category: "Project Management",
+    Service: "Construction Monitoring and Supervision",
+    ServiceTitle: "Our experienced engineering team provides rigorous on-site supervision to ensure every aspect of construction aligns with approved design specifications. We implement robust QA/QC frameworks—including ISO 9001-based quality management systems and project-specific inspection protocols—to uphold technical excellence, regulatory compliance, and consistent delivery. Through proactive monitoring and detailed reporting, we minimize risks and ensure that every build meets the highest standards.",
+    image: CManage
+  },
   
   
 ]
@@ -446,7 +467,7 @@ export const HowWeWork = [
     Number: "01",
     StepTitle:"Consultation & Project Brief",
     Arrow: HoriArrow,
-    Summary: "We begin with a detailed consultation to understand your project goals, site conditions, and technical requirements. Our team reviews your ideas, budget, and timelines to create a clear project brief and define the best approach for your needs.",
+    Summary: "We begin with a detailed consultation to understand your project scope and technical requirements. This collaborative phase ensures alignment with your vision, goals, and operation priorities.",
   },
   {
     Id: 2,
@@ -454,13 +475,13 @@ export const HowWeWork = [
     Number: "02",
     StepTitle:"Design & Planning",
     Arrow: HoriArrow,
-    Summary: "Our engineers and designers develop precise plans, structural models, and cost estimates that align with safety standards and industry best practices. We ensure every design is functional, efficient, and tailored to meet your vision.",
+    Summary: "Once the scope is defined, our technical team works closely with all stakeholders to develop a design that reflects the project brief and adheres to industry best practices. Every solution is engineered for functionality, efficiency, and client-specific needs.",
   },
   {
     Id: 3,
     image:CraneIcon,
     Number: "03",
-    StepTitle:"Execution & Delivery",
-    Summary: "Once approved, we oversee every stage of implementation — from construction supervision and quality control to final project handover. Our goal is to deliver durable, sustainable, and high-quality results on time and within budget.",
+    StepTitle:"Construction & Close Out",
+    Summary: "Following our internal quality assurance review, final designs are issued for construction. We supervise every stage- from site execution to final handover-ensuring the delivery of a sustainable, durable and high-quality product, completed on time and within budget.",
   },
 ]

@@ -99,11 +99,11 @@ const [filter, setFilter] = useState('ALL SECTORS')
                 <h2 className="text-xl font-Sora font-semibold mb-2">
                   {story.title}
                 </h2>
-                <p className='text-sm font-Manrope mb-2'>
-                  {`${story.body[0].children[0].text.substring(0, 120)}...`}
-                </p>
                 <p className="text-sm text-gray-600 font-semibold font-Anek">
                  Date Posted: <span className='font-normal'>{format(new Date(story.publishedAt), "MMMM dd, yyyy")}</span>
+                </p>
+                <p className='text-sm font-Manrope mt-2 mb-2'>
+                  {`${story.body[0].children[0].text.substring(0, 120)}...`}
                 </p>
                 <div className="mt-2 flex flex-wrap gap-2">
                   {story.categories?.map((cat, i) => (

@@ -17,6 +17,7 @@ import { NavLink } from 'react-router-dom';
 
 
 export default function Swiperjss() {
+  const ProjMultiply = [...ProjectHome, ...ProjectHome];
   return (
     <>
       <Swiper
@@ -46,11 +47,11 @@ export default function Swiperjss() {
           },
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Navigation]}
         className="mySwiper my-8  py-8"
       >
         {
-            ProjectHome.map((x) => (
+            ProjMultiply.map((x) => (
                 <NavLink key={x.Id} to="/Project">
 
                 <SwiperSlide key={x.Id}>

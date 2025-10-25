@@ -3,8 +3,9 @@ import { AboutTeam, Achievements, FactsComp } from "../Utils";
 import { motion } from "motion/react";
 import NumbersAni from "../Components/NumbersAni";
 import Founder from "../assets/Images/founder.jpeg";
-import Aboutconstruct from "../assets/Images/aboutconstruction.jpg";
+import Aboutconstruct from "../assets/Images/abtcollab.jpg";
 import Archidesi from "../assets/Images/Archidesi.jpeg";
+import Accordion from "../Components/Accordion";
 
 const About = () => {
   return (
@@ -69,7 +70,7 @@ const About = () => {
         >
           <img
             src={Aboutconstruct}
-            className="rounded-md w-[400px] h-[500px]"
+            className="rounded-md w-[350px] h-[500px]"
             alt="Ongoing Construction"
           />
         </motion.div>
@@ -183,7 +184,7 @@ const About = () => {
       <div></div>
       <div className="mt-12 mb-8 mx-8 sma:mx-4 mda:mx-4">
         <h1 className="text-center mb-10 mt-10 text-4xl sma:text-3xl mda:text-3xl font-Sora font-semibold">
-         OUR CORE VALUES
+          OUR CORE VALUES
         </h1>
         <div className="flex sma:flex-col-reverse mda:flex-col items-end my-16 justify-around ">
           <div>
@@ -197,9 +198,13 @@ const About = () => {
           <div>
             <div className="grid grid-cols-2 sma:grid-cols-1 mda:grid-cols-1 lg:gap-8 sma:gap-4 mda:gap-4 items-center ">
               {FactsComp.map((x) => (
-                <div
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: x.Id * 0.5 }}
                   key={x.Id}
-                  className="bg-white/20 w-[350px] shadow-lg h-[300px] sma:h-full mda:h-full rounded-md gap-4 px-4 pt-6 mda:w-[98%] sma:w-[98%]"
+                  className="bg-white/20 w-[350px] shadow-lg h-[330px] sma:h-full mda:h-full rounded-md gap-4 px-4 pt-6 mda:w-[98%] sma:w-[98%]"
                 >
                   <img
                     src={x.image}
@@ -212,7 +217,7 @@ const About = () => {
                   <p className="text-base font-Nunito mt-2 font-normal">
                     {x.text}
                   </p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -231,6 +236,29 @@ const About = () => {
                 ))
               }
           </div> */}
+      </div>
+      <div className="pt-10 mb-8">
+
+        <h1 className="text-3xl sma:text-3xl mda:text-3xl text-[#415D43] text-center mb-16 font-Playfair font-medium mt-10">
+          Why Choose <span className="text-[#0047AB]">GOODHOPE</span>
+        </h1>
+      <div className="text-start  flex justify-center self-center px-5 ">
+      <div className="w-fit bg-[#f5f5f5] rounded-md p-6 grid gap-6 sma:gap-4 mda:gap-4">
+        <Accordion
+          head="Decades of international experience"
+          answer="Our leadership and technical teams bring a wealth of global expertise, delivering solutions that meet international standards while responding to local realities"
+        />
+        <Accordion 
+        head="Pan-African Network and Resources"
+        answer="We leverage a vast pool of expert partners and resources across Africa, enabling multidisciplinary collaboration and agile project delivery in diverse contexts."
+        />
+        <Accordion 
+        head="South Africa-Nigeria Bridge"
+        answer="We serve as a strategic link between professionals in South Africa and Nigeria, fostering knowledge exchange, innovation, and excellence across the built environment sector"
+        />
+      </div>
+
+      </div>
       </div>
       <div>
         <div>

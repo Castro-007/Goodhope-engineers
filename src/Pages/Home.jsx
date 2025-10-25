@@ -61,9 +61,18 @@ const Home = () => {
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              viewport={{ once: true }}
+              className=" py-4 px-3 rounded-xl text-3xl mt-12 bg-white/70 backdrop-sepia-0 bg-opacity-0 backdrop-blur-xs backdrop-filter mr-8 font-Anek float-right"
+            >
+              CONSULTING <br /> ENGINEERING SERVICE
+            </motion.h1>
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1 }}
               viewport={{ once: true }}
-              className="text-5xl font-Sora font-medium text-white pt-32 px-8 sma:text-3xl mda:text-3xl"
+              className="text-5xl font-Sora font-medium text-white pt-52 px-8 sma:text-3xl mda:text-3xl"
             >
               Building Dreams
             </motion.h1>
@@ -271,7 +280,7 @@ const Home = () => {
         </div>
       </section>
       <section className="relative z-0">
-        <h1 className="text-3xl text-start font-Playfair flex items-center text-black pt-8">
+        <h1 className="text-3xl text-start font-Playfair flex items-center text-[#415D43] pt-8">
           <TbArrowBadgeRight className="text-black" /> OUR PROJECTS
         </h1>
         <Swiperjss />
@@ -291,7 +300,7 @@ const Home = () => {
 
         <div className="mt-5">
           <div>
-            <h1 className="text-3xl text-start font-Playfair flex items-center text-black pt-8">
+            <h1 className="text-3xl text-start font-Playfair flex items-center text-[#415D43] pt-8">
               <TbArrowBadgeRight className="text-black" /> CLIENT TESTIMONIALS
             </h1>
 
@@ -343,6 +352,21 @@ const Home = () => {
                 />
               ))}
             </div>
+          </div> 
+          <div className="lg:border-t lg:border-[#415D43] pt-8 ">
+              <div className="">
+
+          <h1 className="text-3xl text-start font-Playfair text-[#415D43] pt-8 lg:pb-12">
+            NETWORK & AFFILIATES
+          </h1>
+          <p className="text-lg sma:text-base mda:text-base font-Nunito lg:mb-16">
+            Our affiliate sister company in South Africa, <span className="text-[#0047AB] font-semibold"> Tusgad Ventures (Pty)
+            Ltd</span>  strengthens our ability to deliver integrated engineering
+            solutions across borders. Together, we share resources, technical
+            expertise, and unified commitment to excellence-Bridging regional
+            insights with global standards.
+          </p>
+              </div>
           </div>
         </div>
       </section>
@@ -352,23 +376,47 @@ const Home = () => {
         <div className="flex sma:flex-col max-w-6xl bg-Lookforbg relative mda:flex-col bg-cover bg-center sma:bg-top mda:bg-top h-[400px] text-amber-300 justify-center text-center rounded-3xl items-start pt-5 sma:mt-12 mda:mt-12">
           <div className="absolute inset-0 gradient-hero bg-teal-900/50 w-full opacity-80 rounded-3xl"></div>
           <div className="relative ">
-            <p className="font-Nunito lg:font-extralight font-light sma:text-2xl mda:text-2xl text-3xl">
+            <motion.p
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 }}
+              viewport={{ once: true }}
+              className="font-Nunito lg:font-extralight font-light sma:text-2xl mda:text-2xl text-3xl"
+            >
               LOOKING FOR A QUALIFIED TEAM TO DELIVER YOUR
-            </p>
-            <p className="font-Nunito sma:text-2xl mda:text-2xl text-3xl font-medium mb-3 mt-6">
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1.5 }}
+              viewport={{ once: true }}
+              className="font-Nunito sma:text-2xl mda:text-2xl text-3xl font-medium mb-3 mt-6"
+            >
               NEXT ENGINEERING PROJECT?
-            </p>
-            <h1 className="text-4xl font-Varela sma:text-2xl mda:text-2xl uppercase font-medium lg:py-6  ">
+            </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1.9 }}
+              viewport={{ once: true }}
+              className="text-4xl font-Varela sma:text-2xl mda:text-2xl uppercase font-medium lg:py-6  "
+            >
               REQUEST OUR SERVICE FOR YOUR NEXT PROJECT
-            </h1>
-            <button className="my-8">
+            </motion.h1>
+            <motion.button
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 2.1 }}
+              viewport={{ once: true }}
+              className="my-8"
+            >
               <NavLink
                 to="/Contact"
                 className="border-[#415D43] text-white hover:bg-white hover:text-black duration-300 my-7 delay-100 ease-linear border bg-black py-3 px-2 rounded-md"
               >
                 HIRE US NOW
               </NavLink>
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>

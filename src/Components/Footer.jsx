@@ -34,14 +34,14 @@ const Footer = () => {
               <FaLinkedin className="text-xl  cursor-pointer delay-100 ease-in-out" />
             </a>
             
-            <a
+            {/* <a
               href="https://www.Facebook.com"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full p-3 transition-all delay-100 hover:text-[#EAFF47] ease-linear text-white  group"
             >
               <FaFacebook className="text-xl  cursor-pointer delay-100 ease-in-out" />
-            </a>
+            </a> */}
           </div>
         </div>
         <div className=" ">
