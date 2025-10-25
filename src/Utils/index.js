@@ -22,9 +22,8 @@ import Project8 from "../assets/Images/Project/Project8.jpg";
 import EngIntegration from "../assets/Images/Services/Engineering-Integrations.jpg"
 import PDesign from "../assets/Images/Services/PDesign.jpg"
 import CManage from "../assets/Images/Services/ConSupervision.jpg"
-import ConstructServ from "../assets/Images/Services/Construct.jpg"
 import SiteE from "../assets/Images/Services/SiteE.jpg"
-import EngCon from "../assets/Images/Services/EngCon.jpg"
+
 import Sewer from "../assets/Images/Services/sewer1.jpg"
 import SiteEarth from "../assets/Images/Services/SiteEarth.jpg"
 import TransportPlan from "../assets/Images/Services/TransportPlan.jpg"

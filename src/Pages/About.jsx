@@ -204,7 +204,7 @@ const About = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: x.Id * 0.5 }}
                   key={x.Id}
-                  className="bg-white/20 w-[350px] shadow-lg h-[330px] sma:h-full mda:h-full rounded-md gap-4 px-4 pt-6 mda:w-[98%] sma:w-[98%]"
+                  className="bg-white/20 w-[350px] shadow-lg h-fit sma:h-full mda:h-full rounded-2xl gap-4 px-4 pt-6 mda:w-[98%] sma:w-[98%]"
                 >
                   <img
                     src={x.image}
@@ -214,7 +214,7 @@ const About = () => {
                   <h1 className="text-lg  mt-5  font-Sora font-medium text-[#000000]">
                     {x.Heading}
                   </h1>
-                  <p className="text-base font-Nunito mt-2 font-normal">
+                  <p className="text-base font-Nunito mt-2 pb-4 font-normal">
                     {x.text}
                   </p>
                 </motion.div>
@@ -237,13 +237,13 @@ const About = () => {
               }
           </div> */}
       </div>
-      <div className="pt-10 mb-8">
+      <div className="pt-10 mb-8 bg-[#f5f5f5] rounded-md p-4 shadow-md">
 
-        <h1 className="text-3xl sma:text-3xl mda:text-3xl text-[#415D43] text-center mb-16 font-Playfair font-medium mt-10">
+        <h1 className="text-3xl uppercase sma:text-3xl mda:text-3xl text-[#415D43] text-center mb-16 font-Playfair font-medium mt-10">
           Why Choose <span className="text-[#0047AB]">GOODHOPE</span>
         </h1>
       <div className="text-start  flex justify-center self-center px-5 ">
-      <div className="w-fit bg-[#f5f5f5] rounded-md p-6 grid gap-6 sma:gap-4 mda:gap-4">
+      <div className="w-fit  rounded-md p-6 grid gap-6 sma:gap-4 mda:gap-4">
         <Accordion
           head="Decades of international experience"
           answer="Our leadership and technical teams bring a wealth of global expertise, delivering solutions that meet international standards while responding to local realities"
