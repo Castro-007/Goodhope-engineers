@@ -299,7 +299,7 @@ const Home = () => {
         <hr className="border-t-2 border-[#415D43] max-w-6xl mt-12 sma:mt-8 mda:mt-8" />
 
         <div className="mt-5">
-          <div>
+          {/* <div>
             <h1 className="text-3xl text-start font-Playfair flex items-center text-[#415D43] pt-8">
               <TbArrowBadgeRight className="text-black" /> CLIENT TESTIMONIALS
             </h1>
@@ -331,7 +331,7 @@ const Home = () => {
                 </motion.div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-8">

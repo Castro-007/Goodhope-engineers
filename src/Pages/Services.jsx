@@ -21,7 +21,7 @@ const Services = () => {
     "ALL SECTORS",
     "Civil Engineering",
     "Structural Engineering",
-    "Project Management",
+    "Construction Project Management",
   ];
 
   return (

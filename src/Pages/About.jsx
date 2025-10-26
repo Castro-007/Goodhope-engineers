@@ -208,7 +208,7 @@ const About = () => {
                 >
                   <img
                     src={x.image}
-                    className=" w-16 h-16  sma:text-3xl mda:text-3xl font-Sora font-medium  mb-12 flex"
+                    className=" w-16 h-16  sma:text-3xl mda:text-3xl font-Sora font-medium mb-12 flex"
                   />
 
                   <h1 className="text-lg  mt-5  font-Sora font-medium text-[#000000]">

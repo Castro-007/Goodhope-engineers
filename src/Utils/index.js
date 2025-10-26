@@ -179,7 +179,7 @@ export const ServiceHome = [
   {
     Id: 3,
     SocialIcon: FaClipboardCheck,
-    title: "Project Management",
+    title: "Construction Project Management",
     classNames: " lg:border-t lg:border-[#415D43] lg:pt-4",
     text: " We offer comprehensive project management services to ensure the successful execution of engineering projects from inception to completion. Our experienced project managers coordinate all aspects of the project, including budgeting, scheduling, resource allocation, and stakeholder communication, to deliver projects on time and within budget.",
   },
@@ -435,7 +435,7 @@ export const ServicesWeDo= [
   },
   {
     Id:"07",
-    Category: "Project Management",
+    Category: "Construction Project Management",
     Service: "Project Planning & Scheduling",
     ServiceTitle: "We define project goals, timelines, and milestones to ensure smooth execution and efficient resource allocation.",
     image: ProjPlan
@@ -449,7 +449,7 @@ export const ServicesWeDo= [
   },
   {
     Id:"09",
-    Category: "Project Management",
+    Category: "Construction Project Management",
     Service: "Construction Monitoring and Supervision",
     ServiceTitle: "Our experienced engineering team provides rigorous on-site supervision to ensure every aspect of construction aligns with approved design specifications. We implement robust QA/QC frameworks—including ISO 9001-based quality management systems and project-specific inspection protocols—to uphold technical excellence, regulatory compliance, and consistent delivery. Through proactive monitoring and detailed reporting, we minimize risks and ensure that every build meets the highest standards.",
     image: CManage
