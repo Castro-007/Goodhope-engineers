@@ -65,7 +65,7 @@ const Home = () => {
               viewport={{ once: true }}
               className=" py-4 px-3 rounded-xl text-3xl mt-12 bg-white/70 backdrop-sepia-0 bg-opacity-0 backdrop-blur-xs backdrop-filter mr-8 font-Anek float-right"
             >
-              CONSULTING <br /> ENGINEERING SERVICE
+              CIVIL | STRUCTURAL<br /> ENGINEERING 
             </motion.h1>
             <motion.h1
               initial={{ opacity: 0, y: 40 }}

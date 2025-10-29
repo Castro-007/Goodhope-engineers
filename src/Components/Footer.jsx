@@ -69,7 +69,7 @@ const Footer = () => {
           <hr className="border-t-2 border-[#f4f4f4] max-w-6xl mt-1 " />
           <ul className="space-y-4 mt-4">
             {
-              ["Civil Engineering", "Structural Engineering","Project Management"].map((x) => (
+              ["Civil Engineering", "Structural Engineering","Construction Project Management"].map((x) => (
                 <li key={x} className="text-base font-extralight font-Sora ">{x}</li>
               ))
             }
@@ -91,8 +91,8 @@ Lekki Phase 1, Lagos.
             <FaPhoneAlt className="text-xl"/> 
             </div>
             <div>
-          <a className="flex gap-2 font-Sora font-extralight text-base" href="tel:+2348151985253"> +234-815-1985-253</a>
-          <a className="flex gap-2 font-Sora font-extralight text-base" href="tel:+27767565533"> +27-7675-65533</a>
+          <a className="flex gap-2 font-Sora font-extralight text-base" href="tel:+2348151985253"> +234-81-5198-5253</a>
+          <a className="flex gap-2 font-Sora font-extralight text-base" href="tel:+27767565533"> +27-76-756-5533</a>
 
             </div>
             </div>

@@ -1,12 +1,8 @@
 import {FaBuilding, FaDraftingCompass, FaHardHat, FaRoad, FaClipboardCheck,
 } from "react-icons/fa";
 import { MdOutlineEngineering } from "react-icons/md";
-import Team1 from "../assets/Images/Teams/Team1.jpg";
-import Team2 from "../assets/Images/Teams/Team2.jpg";
-import Team3 from "../assets/Images/Teams/Team3.jpg";
-import Team4 from "../assets/Images/Teams/Team4.jpg";
-import Team5 from "../assets/Images/Teams/Team5.jpg";
-import Team6 from "../assets/Images/Teams/Team6.jpg";
+import Team1 from "../assets/Images/Teams/OJ Ajayi_1S.jpg";
+
 import Clock8 from "../assets/Images/icons8-clock.png";
 import Professional from "../assets/Images/icons8-professional.png";
 import Excellence from "../assets/Images/icons8-graduation-cap.png";
@@ -25,15 +21,10 @@ import CManage from "../assets/Images/Services/ConSupervision.jpg"
 import SiteE from "../assets/Images/Services/SiteE.jpg"
 
 import Sewer from "../assets/Images/Services/sewer1.jpg"
-import SiteEarth from "../assets/Images/Services/SiteEarth.jpg"
-import TransportPlan from "../assets/Images/Services/TransportPlan.jpg"
-import StrucDes from "../assets/Images/Services/StrucDesAnalysis.jpg"
-import CostEstimation from "../assets/Images/Services/CostEstimation.jpg"
+import SiteEarth from "../assets/Images/Services/shane-mclendon.jpg"
+import StrucDes from "../assets/Images/Services/danist-struct.jpg"
 import Reinforce from "../assets/Images/Services/Reinforce.jpg"
-import SeismicLoad from "../assets/Images/Services/seismicload.jpg"
-import RepairsRehab from "../assets/Images/Services/repairs.jpg"
 import ProjPlan from "../assets/Images/Services/ProjPlan.jpg"
-import QualityRisk from "../assets/Images/Services/quality-risk.jpg"
 import Compass from "../assets/Images/Services/compass_icon1.png"
 import ConstructIcon from "../assets/Images/Services/construction_icon2.png"
 import CraneIcon from "../assets/Images/Services/crane_icon3.png"
@@ -42,6 +33,7 @@ import ECSA from "../assets/Images/ECSA.png"
 import CESA from "../assets/Images/CESA.png"
 import NSE from "../assets/Images/society.jpg"
 import COREN from "../assets/Images/coren1.jpeg"
+import CivilEngi from "../assets/Images/Services/Road-project.jpg"
 
 
 
@@ -78,13 +70,13 @@ export const NavBlink = [
 export const imageSlider = [
   {
     Id: 1,
-    img: "https://static.wixstatic.com/media/a4c183_4e220068b0b34a7b871ffc3b63680950~mv2.jpg/v1/crop/x_0,y_100,w_1920,h_1080/fill/w_546,h_308,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/scott-blake-x-ghf9LjrVg-unsplash.jpg",
+    img: CivilEngi,
     alt: "story building",
     headtxt: "Civil Engineering",
   },
   {
     Id: 2,
-    img: "https://static.wixstatic.com/media/a4c183_b1542aa5cee3499d97f40397e361b4f4~mv2.jpg/v1/crop/x_0,y_156,w_3000,h_1687/fill/w_546,h_308,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/GettyImages-1254413327.jpg",
+    img: "https://static.wixstatic.com/media/a4c183_4e220068b0b34a7b871ffc3b63680950~mv2.jpg/v1/crop/x_0,y_100,w_1920,h_1080/fill/w_546,h_308,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/scott-blake-x-ghf9LjrVg-unsplash.jpg",
     alt: "workers at work",
     headtxt: "Structural Engineering",
   },
@@ -250,50 +242,11 @@ export const AboutTeam = [
     Id: 1,
     img: Team1,
     alt: "CEO Image",
-    name: "ENGR. OLUMIDE AJAYI",
+    name: "ENGR. O.J. AJAYI",
     position: "Founder & CEO",
     email: "Ajayi@goodhopeconsult.com",
   },
-  {
-    Id: 2,
-    img: Team2,
-    alt: "Chief Architect Image",
-    name: "Mrs. Emily Davis",
-    position: "Chief Architect",
-    email: "Emily@goodhopeconsult.com",
-  },
-  {
-    Id: 3,
-    img: Team3,
-    alt: "Construction manager Image",
-    name: "MARK JOHNSON",
-    position: "Construction Manager",
-    email: "Mark@goodhopeconsult.com",
-  },
-  {
-    Id: 4,
-    img: Team4,
-    alt: "Project Coordinator Image",
-    name: "SARAH LEE",
-    position: "Project Coordinator ",
-    email: "Sarah@goodhopeconsult.com",
-  },
-  {
-    Id: 5,
-    img: Team5,
-    alt: "Michael Brown Image",
-    name: "MICHAEL BROWN",
-    position: "Lead Engineer",
-    email: "Micheal@goodhopeconsult.com",
-  },
-  {
-    Id: 6,
-    img: Team6,
-    alt: "Jack Brown Image",
-    name: "Jack BROWN",
-    position: "Chief interior Designer",
-    email: "Jack@goodhopeconsult.com",
-  },
+  
 ];
 
 export const FactsComp = [
@@ -418,14 +371,21 @@ export const ServicesWeDo= [
     ServiceTitle: "We create robust designs that balance safety, performance, and efficiency using advanced modeling and engineering tools.",
     image: StrucDes
   },
+  // {
+  //   Id:"05",
+  //   Category: "Structural Engineering",
+  //   Service: "Building Reinforcement & Retrofitting",
+  //   ServiceTitle: "We strengthen existing structures through advanced reinforcement and retrofitting techniques that meet modern safety codes.",
+  //   image: Reinforce
+  // },
+ 
   {
     Id:"05",
     Category: "Structural Engineering",
-    Service: "Building Reinforcement & Retrofitting",
-    ServiceTitle: "We strengthen existing structures through advanced reinforcement and retrofitting techniques that meet modern safety codes.",
+    Service: "Repairs and Building Rehabilitation",
+    ServiceTitle: "We extend the life of existing structures through advanced retrofitting techniques that align with modern safety standards and building codes. Our rehabilitation solutions are engineered for durability, cost-efficiency, and regulatory compliance- ensuring renewed performance without compromising integrity.",
     image: Reinforce
   },
- 
   {
     Id:"06",
     Category: "Structural Engineering",
@@ -442,13 +402,6 @@ export const ServicesWeDo= [
   },
   {
     Id:"08",
-    Category: "Structural Engineering",
-    Service: "Repairs and Building Rehabilitation",
-    ServiceTitle: "We extend the life of existing structures through advanced retrofitting techniques that align with modern safety standards and building codes. Our rehabilitation solutions are engineered for durability, cost-efficiency, and regulatory compliance- ensuring renewed performance without compromising integrity.",
-    image: RepairsRehab
-  },
-  {
-    Id:"09",
     Category: "Construction Project Management",
     Service: "Construction Monitoring and Supervision",
     ServiceTitle: "Our experienced engineering team provides rigorous on-site supervision to ensure every aspect of construction aligns with approved design specifications. We implement robust QA/QC frameworks—including ISO 9001-based quality management systems and project-specific inspection protocols—to uphold technical excellence, regulatory compliance, and consistent delivery. Through proactive monitoring and detailed reporting, we minimize risks and ensure that every build meets the highest standards.",

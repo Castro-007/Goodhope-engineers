@@ -68,8 +68,8 @@ const Services = () => {
           />
         </div>
       </div>
-      <section className="mt-20 lg:px-14 px-">
-        <div>
+      <section className="mt-20 bg-[#f5f5f5] py-4 lg:px-14 px-">
+        <div className="">
           <h1 className="text-4xl sma:text-2xl mda:text-2xl font-Anek">
             WHAT WE OFFER
           </h1>
@@ -98,7 +98,7 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: x.Id * 0.3 }}
-                className="rounded-3xl p-2 shadow-xl"
+                className="rounded-3xl p-2 bg-white "
               >
                   <div className=" ">
                     <img

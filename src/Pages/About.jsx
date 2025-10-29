@@ -2,7 +2,6 @@ import React from "react";
 import { AboutTeam, Achievements, FactsComp } from "../Utils";
 import { motion } from "motion/react";
 import NumbersAni from "../Components/NumbersAni";
-import Founder from "../assets/Images/founder.jpeg";
 import Aboutconstruct from "../assets/Images/abtcollab.jpg";
 import Archidesi from "../assets/Images/Archidesi.jpeg";
 import Accordion from "../Components/Accordion";
