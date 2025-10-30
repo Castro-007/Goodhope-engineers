@@ -15,8 +15,8 @@ const Footer = () => {
           </NavLink>
           <p className=" text-sm font-light font-Nunito ">
             Goodhope Consulting Engineering Services is an independent firm
-            specializing in civil and structural engineering, as well as project
-            development. We deliver professional consultancy solutions to
+            specializing in civil and structural engineering, as well as construction project
+            management. We deliver professional consultancy solutions to
             clients in both the private and public sectors, ensuring every
             project is handled with precision, innovation, and integrity. Our
             commitment is to create sustainable results that stand the test of

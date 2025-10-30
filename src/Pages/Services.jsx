@@ -3,7 +3,8 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import Project1 from "../assets/Images/Project/Project1.jpg";
 import { HowWeWork, ServicesWeDo } from "../Utils";
-
+import { NavLink } from "react-router-dom";
+import { BsArrowDownRight } from "react-icons/bs";
 
 const Services = () => {
   const [filter, setFilter] = useState("ALL SECTORS");
@@ -52,10 +53,10 @@ const Services = () => {
             </p>
             <p className="mt-8 text-base font-light font-Sora text-[#415D43]">
               At GoodHope Consulting Engineers, we are more than design
-              engineers backed by decades of proven
-              expertise in civil, structural engineering, as well as project
-              management, we consistently exceed local benchmarks by applying
-              global best practices.
+              engineers backed by decades of proven expertise in civil,
+              structural engineering, as well as project management, we
+              consistently exceed local benchmarks by applying global best
+              practices.
             </p>
           </motion.div>
         </section>
@@ -90,16 +91,32 @@ const Services = () => {
               </button>
             ))}
           </div>
-          <div className="grid lg:grid-cols-2 sma:grid-cols-1 mda:grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
-            {filteredData.map((x) => (
-              <motion.div
-                key={x.Id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: x.Id * 0.3 }}
-                className="rounded-3xl p-2 bg-white "
-              >
+          <div className="flex justify-around gap-8 sma:flex-col-reverse mda:flex-col-reverse">
+            <div className="">
+              <button className="border-[#19B38C] group border rounded-full sma:w-fit mda:w-fit sma:text-center mda:text-center w-full px-4 py-2 text-center text-lg hover:bg-green-600  hover:text-white ease-linear duration-300 mt-6">
+                <NavLink
+                  to="/Contact"
+                  className="flex font-Nunito items-center gap-2"
+                >
+                  Contact us{" "}
+                  <span>
+                    {" "}
+                    <BsArrowDownRight className="group-hover:-rotate-45 ease-linear duration-100" />
+                  </span>
+                </NavLink>
+              </button>
+            </div>
+
+            <div className="grid basis-[80%] lg:grid-cols-2 sma:grid-cols-1 mda:grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
+              {filteredData.map((x) => (
+                <motion.div
+                  key={x.Id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: x.Id * 0.3 }}
+                  className="rounded-3xl p-2 bg-white "
+                >
                   <div className=" ">
                     <img
                       src={x.image}
@@ -107,19 +124,20 @@ const Services = () => {
                       className="w-full sma:w-full overflow-hidden mda:h-24 h-[250px] rounded-2xl"
                     />
                   </div>
-                <div className="flex sma:flex-col px-3 py-5 gap-5">
-                  <div>
-                    <h1 className="font-Anek text-lg ">{x.Id}</h1>
-                    <h1 className="font-Nunito text-2xl font-semibold sma:text-xl  mt-3 ">
-                      {x.Service}
-                    </h1>
-                    <p className="text-sm tracking-wide font-Manrope font-normal">
-                      {x.ServiceTitle}
-                    </p>
+                  <div className="flex sma:flex-col px-3 py-5 gap-5">
+                    <div>
+                      <h1 className="font-Anek text-lg ">{x.Id}</h1>
+                      <h1 className="font-Nunito text-2xl font-semibold sma:text-xl  mt-3 ">
+                        {x.Service}
+                      </h1>
+                      <p className="text-sm tracking-wide font-Manrope font-normal">
+                        {x.ServiceTitle}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
         <div className="mt-12 pt-5">
@@ -145,8 +163,6 @@ const Services = () => {
                       {x.Number}
                     </h1>
 
-                    
-
                     <h1 className="text-xl font-Anek mt-8 mb-3 font-">
                       {x.StepTitle}
                     </h1>
@@ -159,7 +175,6 @@ const Services = () => {
             </div>
           </div>
         </div>
-        
       </section>
     </div>
   );
