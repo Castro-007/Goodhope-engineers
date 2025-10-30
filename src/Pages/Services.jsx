@@ -91,7 +91,7 @@ const Services = () => {
               </button>
             ))}
           </div>
-          <div className="flex justify-around gap-8 sma:flex-col-reverse mda:flex-col-reverse">
+          <div className="flex justify-around gap-8 sma:items-center mda:items-center sma:flex-col-reverse mda:flex-col-reverse">
             <div className="">
               <button className="border-[#19B38C] group border rounded-full sma:w-fit mda:w-fit sma:text-center mda:text-center w-full px-4 py-2 text-center text-lg hover:bg-green-600  hover:text-white ease-linear duration-300 mt-6">
                 <NavLink
