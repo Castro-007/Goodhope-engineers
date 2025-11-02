@@ -242,9 +242,10 @@ export const AboutTeam = [
     Id: 1,
     img: Team1,
     alt: "CEO Image",
-    name: "ENGR. O.J. AJAYI",
-    position: "Founder & CEO",
-    email: "Ajayi@goodhopeconsult.com",
+    name: "ENGR (OJ) AJAYI",
+    position: "DIRECTOR",
+    LinkedIn: "https://www.linkedin.com/in/engr-oj-ajayi-3b724b20b/",
+    email: "oj.ajayi@goodhopeengineers.com",
   },
   
 ];

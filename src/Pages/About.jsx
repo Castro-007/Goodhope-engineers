@@ -5,6 +5,7 @@ import NumbersAni from "../Components/NumbersAni";
 import Aboutconstruct from "../assets/Images/abtcollab.jpg";
 import Archidesi from "../assets/Images/Archidesi.jpeg";
 import Accordion from "../Components/Accordion";
+import { FaAngleRight, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -286,9 +287,17 @@ const About = () => {
                 <p className="text-sm font-Nunito mt-2 font-normal">
                   {x.position}
                 </p>
-                <p className="text-sm font-Nunito mt-2 font-normal">
+                <p className="text-base font-Nunito mt-2 font-normal">
                   {x.email}
                 </p>
+                <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-all flex font-medium font-Anek gap-1 delay-100 rounded-full ease-in-out p-3 hover:text-opacity-55 underline text-black group "
+            >
+             <FaAngleRight/> <FaLinkedin className="text-xl  cursor-pointer " /> Linkedln
+            </a>
               </motion.div>
             ))}
           </div>
