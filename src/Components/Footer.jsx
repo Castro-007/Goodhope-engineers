@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="flex gap items-center">
             
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/olumide-oj-ajayi-4a351735"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-all delay-100 rounded-full p-3 hover:text-[#EAFF47] ease-linear text-white group "
