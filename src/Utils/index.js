@@ -57,7 +57,7 @@ export const NavBlink = [
   },
   {
     Id: 4,
-    name: "Project",
+    name: "Projects",
     Link: "/Project",
   },
   {
