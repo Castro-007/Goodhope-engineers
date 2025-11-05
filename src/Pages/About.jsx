@@ -291,7 +291,7 @@ const About = () => {
                   {x.email}
                 </p>
                 <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/olumide-oj-ajayi-4a351735"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-all flex font-medium font-Anek gap-1 delay-100 rounded-full ease-in-out p-3 hover:text-opacity-55 underline text-black group "
