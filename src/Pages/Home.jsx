@@ -92,17 +92,17 @@ const Home = () => {
         <p className="translate-x-2">Contact Us</p>
       </NavLink>
     </motion.button>
-    <div className="sma:mt-5 sma:ml-2 mda:mt-5 mda:ml-2">
+    <div className="sma:mt-5 sma:ml-2 mda:mt-5 mda:ml-2 ">
       {story?.slug?.current && (
         <NavLink
           to={`/Projects/${story.slug.current}`}
-          className="w-[250px] sma:pt-5 h-[200px] lg:absolute lg:bottom-4 lg:right-3  overflow-hidden rounded-md"
+          className="w-[250px] sma:pt-5 h-[200px] absolute lg:bottom-4 lg:right-3 rounded-md"
         >
           {story?.mainImage?.asset?.url && (
             <img
               alt={story.mainImage?.alt || "Recent project image"}
               src={story.mainImage.asset.url}
-              className="object-cover z-0 rounded-md"
+              className="object-cover rounded-md"
               loading="lazy"
             />
           )}
@@ -311,7 +311,7 @@ const Home = () => {
           </button>
         </div>
         <p className="uppercase font-Anek mt-8">
-          Our principles were involved in the following projects
+          Our principles was involved in the following projects
         </p>
         <Swiperjss />
         <hr className="border-t-2 border-[#415D43] max-w-6xl mt-12 sma:mt-8 mda:mt-8" />
