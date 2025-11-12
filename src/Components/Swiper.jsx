@@ -17,7 +17,10 @@ import { NavLink } from 'react-router-dom';
 
 
 export default function Swiperjss() {
-  const ProjMultiply = [...ProjectHome, ...ProjectHome];
+  const ProjMultiply = [
+  ...ProjectHome.map(item => ({ ...item, key: item.Id + "-a" })),
+  ...ProjectHome.map(item => ({ ...item, key: item.Id + "-b" }))
+];
   return (
     <>
       <Swiper
@@ -51,17 +54,17 @@ export default function Swiperjss() {
         className="mySwiper my-8  py-8"
       >
         {
-            ProjMultiply.map((x) => (
-                <NavLink key={x.Id} to="/Project">
-
-                <SwiperSlide key={x.Id}>
+            ProjMultiply.map((x, index) => (
+              
+              <SwiperSlide key={`${x.Id}-${index}`}>
+                  <NavLink to="/Project">
                     <div className=''>
                     <img src={x.img} alt={x.alt} className='w-full h-[400px] object-cover rounded-lg shadow-lg' loading='lazy' />
                     <h1 className='text-2xl sma:text-lg mda:text-lg my-5 font-Sora font-medium text-center pt-4'>{x.title}</h1>
                     <h1 className='text-2xl sma:text-lg mda:text-lg mt-5 font-Sora font-medium text-center pt-4'></h1>
                     </div>
-                </SwiperSlide>
                 </NavLink>
+                </SwiperSlide>
             ))
         }
        

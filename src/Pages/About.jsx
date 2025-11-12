@@ -1,10 +1,11 @@
 import React from "react";
-import { AboutTeam, Achievements, FactsComp } from "../Utils";
+import { AboutTeam, Achievements, FactsComp, Affiliates } from "../Utils";
 import { motion } from "motion/react";
 import NumbersAni from "../Components/NumbersAni";
 import Aboutconstruct from "../assets/Images/abtcollab.jpg";
 import Archidesi from "../assets/Images/Archidesi.jpeg";
 import Accordion from "../Components/Accordion";
+import Frame70 from "../assets/Images/Services/Frame 70.png";
 import { FaAngleRight, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
@@ -123,67 +124,93 @@ const About = () => {
         </div>
       </div>
       <div>
-        <div className="my-10 pt-8 flex  sma:flex-col  rounded-3xl p-4 mt-16 gap-6 justify-around">
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 1, ease: "linear" }}
-            className="basis-[45%] bg-white rounded-3xl hover:shadow-2xl shadow-3xl  duration-100 transition ease-linear px-4 py-6"
-          >
-            <div className="flex p-2 gap-1">
-              <div className="">
-                <span className="bg-blue-500 inline-block center w-3 h-3 rounded-full"></span>
+        <div className="flex justify-between sma:flex-col mda:flex-col">
+          <div className="my-10 basis-[40%] pt-8 rounded-3xl p-4 mt-16 gap-6 justify-around">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1, ease: "linear" }}
+              className=" bg-[#f5f5f5] rounded-3xl hover:shadow-2xl shadow-3xl mb-8 duration-100 transition ease-linear px-4 py-6"
+            >
+              <div className="flex p-2 gap-1">
+                <div className="">
+                  <span className="bg-blue-500 inline-block center w-3 h-3 rounded-full"></span>
+                </div>
+                <div className="circle">
+                  <span className="bg-purple-500 inline-block center w-3 h-3 rounded-full"></span>
+                </div>
+                <div className="circle">
+                  <span className="bg-[#415D43] box inline-block center w-3 h-3 rounded-full"></span>
+                </div>
               </div>
-              <div className="circle">
-                <span className="bg-purple-500 inline-block center w-3 h-3 rounded-full"></span>
+              <div className="card__content"></div>
+              <h1 className="text-3xl w-full text-[#415D43] sma:text-xl mda:text-xl font-semibold font-Sora">
+                OUR MISSION
+              </h1>
+              <p className="mt-10 text-xl sma:text-lg mda:text-lg font-Nunito text-black">
+                To deliver purposeful and sustainable engineering solutions that
+                meet clients’ needs and drive lasting impact.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1, ease: "linear" }}
+              className=" bg-[#0047AB] hover:shadow-2xl shadow rounded-3xl duration-100 transition ease-linear px-4 py-6"
+            >
+              <div className="flex p-2 gap-1">
+                <div className="circle">
+                  <span className="bg-[#415D43] box inline-block center w-3 h-3 rounded-full"></span>
+                </div>
+                <div className="circle">
+                  <span className="bg-purple-500 inline-block center w-3 h-3 rounded-full"></span>
+                </div>
+                <div className="">
+                  <span className="bg-blue-500 inline-block center w-3 h-3 rounded-full"></span>
+                </div>
               </div>
-              <div className="circle">
-                <span className="bg-[#415D43] box inline-block center w-3 h-3 rounded-full"></span>
-              </div>
-            </div>
-            <div className="card__content"></div>
-            <h1 className="text-3xl w-full text-[#415D43] sma:text-xl mda:text-xl font-semibold font-Sora">
-              OUR MISSION
-            </h1>
-            <p className="mt-10 text-xl sma:text-lg mda:text-lg font-Nunito text-black">
-              To deliver purposeful and sustainable engineering solutions that
-              meet clients’ needs and drive lasting impact.
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 1, ease: "linear" }}
-            className="basis-[45%] bg-[#0047AB] hover:shadow-2xl shadow rounded-3xl duration-100 transition ease-linear px-4 py-6"
-          >
-            <div className="flex p-2 gap-1">
-              <div className="circle">
-                <span className="bg-[#415D43] box inline-block center w-3 h-3 rounded-full"></span>
-              </div>
-              <div className="circle">
-                <span className="bg-purple-500 inline-block center w-3 h-3 rounded-full"></span>
-              </div>
-              <div className="">
-                <span className="bg-blue-500 inline-block center w-3 h-3 rounded-full"></span>
-              </div>
-            </div>
-            <div className="card__content"></div>
-            <h1 className="text-3xl w-full text-white sma:text-xl mda:text-xl font-semibold font-Sora">
-              OUR VALUES
-            </h1>
-            <p className="mt-10 text-xl sma:text-lg mda:text-lg font-Nunito text-white">
-              We operate with integrity, uphold the highest standard of
-              professionalism, ensure uncompromising quality, and strive for
-              excellence in every solution we deliver.
-            </p>
-          </motion.div>
+              <div className="card__content"></div>
+              <h1 className="text-3xl w-full text-white sma:text-xl mda:text-xl font-semibold font-Sora">
+                OUR VALUES
+              </h1>
+              <p className="mt-10 text-xl sma:text-lg mda:text-lg font-Nunito text-white">
+                We operate with integrity, uphold the highest standard of
+                professionalism, ensure uncompromising quality, and strive for
+                excellence in every solution we deliver.
+              </p>
+            </motion.div>
+          </div>
+          <div className="basis-[50%]">
+            <img src={Frame70} className="h-[700px]" alt="" />
+          </div>
         </div>
       </div>
-      <div></div>
-      <div className="mt-12 mb-8 mx-8 sma:mx-4 mda:mx-4">
-        <h1 className="text-center mb-10 mt-10 text-4xl sma:text-3xl mda:text-3xl font-Sora font-semibold">
+      <div className="mt-10 mb-16">
+        <div>
+          <h1 className="text-3xl text-start font-Playfair text-[#415D43] pt-8 lg:pb-16">
+            OUR CERTIFICATIONS
+          </h1>
+          <div className=" overflow-hidden w-full sma:mt-12 mb-10 ">
+            <div className="py-4 grid lg:grid-cols-4 sma:grid-cols-2 mda:grid-cols-2 gap-5 sma:gap-2 mda:gap-2 whitespace-nowrap bg-blend-multiply items-center justify-center">
+              {Affiliates.map((x, i) => (
+                <motion.img
+                  key={`${x.Id}-${i}`} // stable + unique key
+                  initial={{ x: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: x.Id * 0.3 }}
+                  viewport={{ once: true }}
+                  className="text-xs font-Sora shrink-0 bg-blend-multiply w-48  sma:w-44 mda:w-44 font-medium  h-24  hover:opacity-100 duration-100"
+                  src={x.Logo}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mt-16 mb-8 mx-8 sma:mx-4 mda:mx-4">
+        <h1 className="text-center mb-10 lg:pt-16 text-4xl sma:text-3xl mda:text-3xl font-Sora font-semibold">
           OUR CORE VALUES
         </h1>
         <div className="flex sma:flex-col-reverse mda:flex-col items-end my-16 justify-around ">
@@ -196,7 +223,7 @@ const About = () => {
             </div>
           </div>
           <div>
-            <div className="grid grid-cols-2 sma:grid-cols-1 mda:grid-cols-1 lg:gap-8 sma:gap-4 mda:gap-4 items-center ">
+            <div className="grid grid-cols-2  sma:grid-cols-1 mda:grid-cols-1 lg:gap-8 sma:gap-4 mda:gap-4 items-center ">
               {FactsComp.map((x) => (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -204,19 +231,12 @@ const About = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: x.Id * 0.5 }}
                   key={x.Id}
-                  className="bg-white/20 w-[350px] shadow-lg h-fit sma:h-full mda:h-full rounded-2xl gap-4 px-4 pt-6 mda:w-[98%] sma:w-[98%]"
+                  className={x.classNames}
                 >
-                  <img
-                    src={x.image}
-                    className=" w-16 h-16  sma:text-3xl mda:text-3xl font-Sora font-medium mb-12 flex"
-                  />
+                  <img src={x.image} className={x.imgClassName} />
 
-                  <h1 className="text-lg  mt-5  font-Sora font-medium text-[#000000]">
-                    {x.Heading}
-                  </h1>
-                  <p className="text-base font-Nunito mt-2 pb-4 font-normal">
-                    {x.text}
-                  </p>
+                  <h1 className={x.headingClassname}>{x.Heading}</h1>
+                  <p className={x.textClassName}>{x.text}</p>
                 </motion.div>
               ))}
             </div>
@@ -238,27 +258,25 @@ const About = () => {
           </div> */}
       </div>
       <div className="pt-10 mb-8 bg-[#f5f5f5] rounded-md p-4 shadow-md">
-
         <h1 className="text-3xl uppercase sma:text-3xl mda:text-3xl text-[#415D43] text-center mb-16 font-Playfair font-medium mt-10">
           Why Choose <span className="text-[#0047AB]">GOODHOPE</span>
         </h1>
-      <div className="text-start  flex justify-center self-center px-5 ">
-      <div className="w-fit  rounded-md p-6 grid gap-6 sma:gap-4 mda:gap-4">
-        <Accordion
-          head="Decades of international experience"
-          answer="Our leadership and technical teams bring a wealth of global expertise, delivering solutions that meet international standards while responding to local realities"
-        />
-        <Accordion 
-        head="Pan-African Network and Resources"
-        answer="We leverage a vast pool of expert partners and resources across Africa, enabling multidisciplinary collaboration and agile project delivery in diverse contexts."
-        />
-        <Accordion 
-        head="South Africa-Nigeria Bridge"
-        answer="We serve as a strategic link between professionals in South Africa and Nigeria, fostering knowledge exchange, innovation, and excellence across the built environment sector"
-        />
-      </div>
-
-      </div>
+        <div className="text-start  flex justify-center self-center px-5 ">
+          <div className="w-fit  rounded-md p-6 grid gap-6 sma:gap-4 mda:gap-4">
+            <Accordion
+              head="Decades of international experience"
+              answer="Our leadership and technical teams bring a wealth of global expertise, delivering solutions that meet international standards while responding to local realities"
+            />
+            <Accordion
+              head="Pan-African Network and Resources"
+              answer="We leverage a vast pool of expert partners and resources across Africa, enabling multidisciplinary collaboration and agile project delivery in diverse contexts."
+            />
+            <Accordion
+              head="South Africa-Nigeria Bridge"
+              answer="We serve as a strategic link between professionals in South Africa and Nigeria, fostering knowledge exchange, innovation, and excellence across the built environment sector"
+            />
+          </div>
+        </div>
       </div>
       <div>
         <div>
@@ -291,13 +309,14 @@ const About = () => {
                   {x.email}
                 </p>
                 <a
-              href="https://www.linkedin.com/in/olumide-oj-ajayi-4a351735"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-all flex font-medium font-Anek gap-1 delay-100 rounded-full ease-in-out p-3 hover:text-opacity-55 underline text-black group "
-            >
-             <FaAngleRight/> <FaLinkedin className="text-xl  cursor-pointer " /> Linkedln
-            </a>
+                  href="https://www.linkedin.com/in/olumide-oj-ajayi-4a351735"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all flex font-medium font-Anek gap-1 delay-100 rounded-full ease-in-out p-3 hover:text-opacity-55 underline text-black group "
+                >
+                  <FaAngleRight />{" "}
+                  <FaLinkedin className="text-xl  cursor-pointer " /> Linkedln
+                </a>
               </motion.div>
             ))}
           </div>

@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
+import client from "../lib/Client";
+import { format } from "date-fns";
+import { PortableText } from "@portabletext/react";
 import NumbersAni from "../Components/NumbersAni";
-
 import {
   Achievements,
   Affiliates,
@@ -12,7 +14,7 @@ import {
   Testimonial,
   UncoverImg,
 } from "../Utils";
-import { BsArrowDownRight, BsArrowRight } from "react-icons/bs";
+import { BsArrowDownRight, BsArrowRight, BsDownload } from "react-icons/bs";
 import { TbArrowBadgeRight } from "react-icons/tb";
 import Swiperjss from "../Components/Swiper";
 import { FaWhatsapp } from "react-icons/fa";
@@ -20,87 +22,97 @@ import { MdArrowRightAlt } from "react-icons/md";
 
 const Home = () => {
   const display = [...ScrollText, ...ScrollText];
-  // const Affdisplay = [
-  //   ...Affiliates,
-  //   ...Affiliates,
-  //   ...Affiliates,
-  //   ...Affiliates,
-  // ];
 
-  // const [currentIndex, setCurrentIndex] = useState(0);
-  // const [slideDirection, setSlideDirection] = useState("right");
+  const [story, setStory] = useState([]);
 
-  //   const prevSlide = () => {
-  //   setSlideDirection("left");
-  //   const newIndex =
-  //     currentIndex === 0 ? imageSlider.length - 1 : currentIndex - 1;
-  //   setCurrentIndex(newIndex);
-  // };
-
-  // const nextSlide = () => {
-  //   setSlideDirection("right");
-  //   const newIndex =
-  //     currentIndex === imageSlider.length - 1 ? 0 : currentIndex + 1;
-  //   setCurrentIndex(newIndex);
-  // };
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     nextSlide();
-  //   }, 6000); // Change slide every 6 seconds
-
-  //   return () => clearInterval(interval); // Clear interval on component unmount
-  // }, [currentIndex]);
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type == "post"] | order(_createdAt desc)[0]{
+      slug,
+      mainImage{
+        asset->{url},
+        alt
+      }
+    }`
+      )
+      .then((data) => {
+        setStory(data);
+      })
+      .catch(console.error);
+  }, []);
 
   return (
     <div className="bg-  lg:px-6 lg:ml-6 sma:px-4 mda:px-4 px-4 ">
       <section>
-        <div className="bg-homebg h-[550px] lg:bg-fixed max-w-6xl relative rounded-md bg-cover bg-center sma:bg-top mda:bg-top ">
-          <div className="absolute inset-0  gradient-hero bg-black/20 w-full opacity-80"></div>
-          <div>
-            <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.5 }}
-              viewport={{ once: true }}
-              className=" py-4 px-3 rounded-xl text-3xl mt-12 bg-white/70 backdrop-sepia-0 bg-opacity-0 backdrop-blur-xs backdrop-filter mr-8 font-Anek float-right"
-            >
-              CIVIL | STRUCTURAL<br /> ENGINEERING 
-            </motion.h1>
-            <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 1 }}
-              viewport={{ once: true }}
-              className="text-5xl font-Sora font-medium text-white pt-52 px-8 sma:text-3xl mda:text-3xl"
-            >
-              Building Dreams
-            </motion.h1>
-            <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 1.5 }}
-              viewport={{ once: true }}
-              className="text-2xl max-w-xl font-Playfair uppercase font-medium text-white pt-8 px-8 sma:text-2xl mda:text-2xl"
-            >
-              innovative designs, and sustainable solutions for every project
-            </motion.h1>
+<div className="bg-homebg h-[550px] sma:h-[750px] mda:h-[750px] lg:bg-fixed max-w-6xl relative rounded-md bg-cover bg-center sma:bg-top mda:bg-top ">
+  <div className="absolute inset-0  gradient-hero bg-black/20 w-full opacity-80"></div>
+  <div>
+    <motion.h1
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.5 }}
+      viewport={{ once: true }}
+      className=" py-4 px-3 rounded-xl text-3xl mt-12 bg-white/70 backdrop-sepia-0 bg-opacity-0 backdrop-blur-xs backdrop-filter mr-8 font-Anek float-right"
+    >
+      CIVIL | STRUCTURAL
+      <br /> ENGINEERING
+    </motion.h1>
+    <motion.h1
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 1 }}
+      viewport={{ once: true }}
+      className="text-5xl font-Sora font-medium text-white pt-52 px-8 sma:text-3xl mda:text-3xl"
+    >
+      Building Dreams
+    </motion.h1>
+    <motion.h1
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 1.5 }}
+      viewport={{ once: true }}
+      className="text-2xl max-w-xl font-Playfair uppercase font-medium text-white pt-8 px-8 sma:text-2xl mda:text-2xl"
+    >
+      innovative designs, and sustainable solutions for every project
+    </motion.h1>
 
-            <motion.button
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 1.9 }}
-              viewport={{ once: true }}
-              className="bg-white text-center ml-8 font-Nunito w-48 rounded-2xl h-14 mt-14 relative z-0 text-black text-xl sma:text-base mda:text-base font-medium group"
-              type="button"
-            >
-              <NavLink to="/Contact">
-                <div className="bg-[#1ED2A5] text-white rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[184px] z-[1] duration-500">
-                  ⟶
-                </div>
-                <p className="translate-x-2">Contact Us</p>
-              </NavLink>
-            </motion.button>
+    <motion.button
+      initial={{ opacity: 0, x: -40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, delay: 1.9 }}
+      viewport={{ once: true }}
+      className="bg-white text-center ml-8 font-Nunito w-48 rounded-2xl h-14 mt-14 relative z-0 text-black text-xl sma:text-base mda:text-base font-medium group"
+      type="button"
+    >
+      <NavLink to="/Contact">
+        <div className="bg-[#1ED2A5] text-white rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[184px] z-[1] duration-500">
+          ⟶
+        </div>
+        <p className="translate-x-2">Contact Us</p>
+      </NavLink>
+    </motion.button>
+    <div className="sma:mt-5 sma:ml-2 mda:mt-5 mda:ml-2">
+      {story?.slug?.current && (
+        <NavLink
+          to={`/Projects/${story.slug.current}`}
+          className="w-[250px] sma:pt-5 h-[200px] lg:absolute lg:bottom-4 lg:right-3  overflow-hidden rounded-md"
+        >
+          {story?.mainImage?.asset?.url && (
+            <img
+              alt={story.mainImage?.alt || "Recent project image"}
+              src={story.mainImage.asset.url}
+              className="object-cover z-0 rounded-md"
+              loading="lazy"
+            />
+          )}
+          <h1 className="text-lg font-Anek text-white uppercase mt-8">
+            See Our Recent Project ⟶
+          </h1>
+        </NavLink>
+      )}
+    </div>
+
             {/* <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -199,9 +211,9 @@ const Home = () => {
             <h1 className="text-3xl text-start font-Playfair flex items-center text-black pt-8">
               <TbArrowBadgeRight className="text-black" /> OUR SERVICE OFFERINGS
             </h1>
-            <div className="flex lg:border-y lg:border-[#415D43] py-8 sma:flex-col mt-14 mda:flex-col justify-between items-start">
-              <div className="basis-[30%] sma:mb-4 mda:mb-4 ">
-                <h1 className=" text-xl font-Nunito text-[#69AD66] font-medium">
+            <div className="flex lg:border-y lg:border-[#415D43] py-8 sma:flex-col mt-14 mda:flex-col justify-between items-center">
+              <div className="basis-[40%] sma:mb-4 mda:mb-4 ">
+                <h1 className=" text-5xl sma:text-2xl mda:text-2xl sma font-Nunito text-[#69AD66] font-medium">
                   We Offer a Range of Services to Meet All Types of Engineering
                   Needs.
                 </h1>
@@ -218,7 +230,7 @@ const Home = () => {
                   </NavLink>
                 </button>
               </div>
-              <div className="grid lg:border-l lg:border-[#415D43] pl-4 lg:grid-cols-2 sma:items-center mda:items-center gap-6 sma:grid-cols-1 basis-[60%] mda:grid-cols-1">
+              <div className="grid lg:border-l lg:border-[#415D43] pl-4 lg:grid-cols-2 sma:items-center mda:items-center gap-6 sma:grid-cols-1 basis-[55%] mda:grid-cols-1">
                 {ServiceHome.map((x) => (
                   <motion.div
                     key={x.Id}
@@ -279,23 +291,29 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="relative z-0">
-        <h1 className="text-3xl text-start font-Playfair flex items-center text-[#415D43] pt-8">
-          <TbArrowBadgeRight className="text-black" /> OUR PROJECTS
-        </h1>
+      <section className="relative z-0 mt-8 lg:mt-16">
+        <div className="flex justify-between sma:flex-col mda:flex-col">
+          <h1 className="text-3xl text-start font-Playfair flex items-center text-[#415D43] pt-8">
+            <TbArrowBadgeRight className="text-black" /> OUR PROJECTS
+          </h1>
+
+          <button className="border-[#1ED2A5] my-4 group border rounded-full w-fit px-8 py-2 text-center text-lg hover:bg-[#1ED2A5] hover:text-white ease-linear duration-300 mt-6">
+            <NavLink
+              to="/Project"
+              className="flex font-Nunito items-center gap-2"
+            >
+              All Projects{" "}
+              <span>
+                {" "}
+                <BsArrowRight className="group-hover:translate-x-4 ease-linear duration-200" />
+              </span>
+            </NavLink>
+          </button>
+        </div>
+        <p className="uppercase font-Anek mt-8">
+          Our principles were involved in the following projects
+        </p>
         <Swiperjss />
-        <button className="border-[#1ED2A5] my-4 group border rounded-full  px-8 py-2 text-center text-lg hover:bg-[#1ED2A5] hover:text-white ease-linear duration-300 mt-6">
-          <NavLink
-            to="/Project"
-            className="flex font-Nunito items-center gap-2"
-          >
-            All Projects{" "}
-            <span>
-              {" "}
-              <BsArrowRight className="group-hover:translate-x-4 ease-linear duration-200" />
-            </span>
-          </NavLink>
-        </button>
         <hr className="border-t-2 border-[#415D43] max-w-6xl mt-12 sma:mt-8 mda:mt-8" />
 
         <div className="mt-5">
@@ -352,21 +370,24 @@ const Home = () => {
                 />
               ))}
             </div>
-          </div> 
+          </div>
           <div className="lg:border-t lg:border-[#415D43] pt-8 ">
-              <div className="">
-
-          <h1 className="text-3xl text-start font-Playfair text-[#415D43] pt-8 lg:pb-12">
-            NETWORK & AFFILIATES
-          </h1>
-          <p className="text-lg sma:text-base mda:text-base font-Nunito lg:mb-16">
-            Our affiliate sister company in South Africa, <span className="text-[#0047AB] font-semibold"> Tusgad Ventures (Pty)
-            Ltd</span>  strengthens our ability to deliver integrated engineering
-            solutions across borders. Together, we share resources, technical
-            expertise, and unified commitment to excellence-Bridging regional
-            insights with global standards.
-          </p>
-              </div>
+            <div className="">
+              <h1 className="text-3xl text-start font-Playfair text-[#415D43] pt-8 lg:pb-12">
+                NETWORK & AFFILIATES
+              </h1>
+              <p className="text-lg sma:text-base mda:text-base font-Nunito lg:mb-16">
+                Our affiliate sister company in South Africa,{" "}
+                <span className="text-[#0047AB] font-semibold">
+                  {" "}
+                  Tusgad Ventures (Pty) Ltd
+                </span>{" "}
+                strengthens our ability to deliver integrated engineering
+                solutions across borders. Together, we share resources,
+                technical expertise, and unified commitment to
+                excellence-Bridging regional insights with global standards.
+              </p>
+            </div>
           </div>
         </div>
       </section>

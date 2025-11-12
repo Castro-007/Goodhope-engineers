@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useParams } from "react-router-dom";
+import { motion } from "motion/react";
 import client from "../lib/Client";
 import { format } from "date-fns";
 import { PortableText } from "@portabletext/react";
@@ -105,6 +106,59 @@ const ProjectPost = () => {
           )}
         </section>
       )}
+            <div className="lg:ml-8 mx-4 mb-8 mt-16 ">
+        <div className="flex sma:flex-col max-w-6xl bg-Lookforbg relative mda:flex-col bg-cover bg-center sma:bg-top mda:bg-top h-[400px] text-amber-300 justify-center text-center rounded-3xl items-start pt-5 sma:mt-12 mda:mt-12">
+          <div className="absolute inset-0 gradient-hero bg-teal-900/50 w-full opacity-80 rounded-3xl"></div>
+          <div className="relative ">
+            <motion.p
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 }}
+              viewport={{ once: true }}
+              className="font-Nunito lg:font-extralight font-light sma:text-2xl mda:text-2xl text-3xl"
+            >
+              LOOKING FOR A QUALIFIED TEAM TO DELIVER YOUR
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1.5 }}
+              viewport={{ once: true }}
+              className="font-Nunito sma:text-2xl mda:text-2xl text-3xl font-medium mb-3 mt-6"
+            >
+              NEXT ENGINEERING PROJECT?
+            </motion.p>
+            <h3 
+            className="text-3xl font-Varela sma:text-xl mda:text-2xl font-medium lg:py-6 ">
+              REQUEST OUR SERVICE FOR YOUR NEXT PROJECT
+            </h3>
+
+            <button className="mt-8">
+              <NavLink
+                to="/Contact"
+                className="border-[#415D43] text-white hover:bg-white hover:text-black duration-300 delay-100 ease-linear border bg-black py-3 px-6 rounded-md lg:my-8 sma:my-4 mda:my-4"
+              >
+                HIRE US NOW
+              </NavLink>
+            </button>
+            
+            {/* <motion.button
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 2.1 }}
+              viewport={{ once: true }}
+              className="my-8"
+            >
+              <NavLink
+                to="/Contact"
+                className="border-[#415D43] text-white hover:bg-white hover:text-black duration-300 delay-100 ease-linear border bg-black py-3 px-2 rounded-md"
+              >
+                HIRE US NOW
+              </NavLink>
+            </motion.button> */}
+          </div>
+        </div>
+      </div>
     </>
   );
 };
