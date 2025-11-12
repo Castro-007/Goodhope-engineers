@@ -58,7 +58,7 @@ const About = () => {
             the unique needs of every project. With extensive experience in
             project development, we combine technical expertise, creativity, and
             a commitment to excellence to deliver lasting value to our clients
-            and communities. Our team takes pride in building with precision,
+            and communities. Our team takes pride in designing with precision,
             integrity, and a vision for sustainable growth — partnering with
             clients to turn ideas into reality.{" "}
           </motion.p>

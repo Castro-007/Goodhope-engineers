@@ -102,7 +102,7 @@ const Home = () => {
             <img
               alt={story.mainImage?.alt || "Recent project image"}
               src={story.mainImage.asset.url}
-              className="object-cover rounded-md"
+              className="object-cover w-[230px] h-[150px] rounded-md"
               loading="lazy"
             />
           )}
@@ -311,7 +311,7 @@ const Home = () => {
           </button>
         </div>
         <p className="uppercase font-Anek mt-8">
-          Our principles was involved in the following projects
+          Our principal was involved in the following projects
         </p>
         <Swiperjss />
         <hr className="border-t-2 border-[#415D43] max-w-6xl mt-12 sma:mt-8 mda:mt-8" />

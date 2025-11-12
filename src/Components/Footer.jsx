@@ -109,6 +109,9 @@ Lekki Phase 1, Lagos.
 
             © 2025 Goodhope Consulting Engineers. All rights reserved.
       </div>
+      <a href="https://www.sanniolayinka-dxz1.onrender.com/" className="font-Anek flex justify-center items-center my-4 text-white text-center mb-4 sma:text-sm mda:text-sm">
+        Developed by{" "} <span className="text-blue-400">CASTRO</span>
+      </a>
     </div>
   );
 };
