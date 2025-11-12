@@ -373,7 +373,7 @@ const Home = () => {
           </div>
           <div className="lg:border-t lg:border-[#415D43] pt-8 ">
             <div className="">
-              <h1 className="text-3xl text-start font-Playfair text-[#415D43] pt-8 lg:pb-12">
+              <h1 className="text-3xl text-start font-Playfair sma:pb-6 mda:pb-6 text-[#415D43] pt-8 lg:pb-12">
                 NETWORK & AFFILIATES
               </h1>
               <p className="text-lg sma:text-base mda:text-base font-Nunito lg:mb-16">
