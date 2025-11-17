@@ -264,7 +264,7 @@ const Home = () => {
               </div>
             </div>
             <div>
-              <h1 className="text-4xl sma:text-2xl mda:text-2xl tracking-[-0.01em] text-[#0A0A0A] font-Playfair mt-8 flex sma:items-start mda:items-start items-center">
+              <h1 className="text-4xl uppercase sma:text-2xl mda:text-2xl tracking-[-0.01em] text-[#0A0A0A] font-Playfair mt-8 flex sma:items-start mda:items-start items-center">
                 <TbArrowBadgeRight className="text-4xl" /> Diverse Solution
                 tailored to your every need
               </h1>

@@ -69,12 +69,12 @@ const Services = () => {
           />
         </div>
       </div>
-      <section className="mt-20 bg-[#f5f5f5] py-4 lg:px-14 px-">
+      <section className="mt-20 bg-[#f5f5f5] py-4 lg:px-14 pt-8">
         <div className="">
           <h1 className="text-4xl sma:text-2xl mda:text-2xl font-Anek">
             WHAT WE OFFER
           </h1>
-          <div className="flex flex-wrap mt-12 sma:mt-6 mda:mt-6 justify-center mb-8 items-center sma:gap-1 mda:gap-1 lg:gap-5">
+          <div className="flex flex-wrap mt-12 pt-10 sma:mt-6 mda:mt-6 justify-center mb-8 items-center sma:gap-1 mda:gap-1 lg:gap-5">
             {Servico.map((x) => (
               <button
                 key={x}
