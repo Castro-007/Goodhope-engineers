@@ -12,7 +12,7 @@ import Customer from "../assets/Images/icons8-customer-service.png";
 import StarRating from "../assets/Images/icons8-star.png";
 import Project7 from "../assets/Images/Project/Project7.jpg";
 import Project2 from "../assets/Images/Project/Project2.jpg";
-import Project5 from "../assets/Images/Project/Bostwana Academic Hospital.jpeg";
+import Project9 from "../assets/Images/Project/Project9.jpg";
 import Project6 from "../assets/Images/Project/Project6.jpg";
 import Project8 from "../assets/Images/Project/Project8.jpg";
 import EngIntegration from "../assets/Images/Services/Engineering-Integrations.jpg"
@@ -198,7 +198,7 @@ export const ProjectHome = [
 
   {
     Id: 3,
-    img: Project5,
+    img: Project9,
     alt: "Teaching Hospital-Botswana ",
     title: "Teaching Hospital-Botswana ",
     Abouttext:
